@@ -69,11 +69,11 @@
 
         layer_1 {
             bindings = <
-&kp C_RESET  &trans      &trans     &trans      &trans       &trans      &mmv MOVE_UP     &trans     &trans    &trans    &trans     &trans      &trans
-&trans       &kp GRAVE   &mkp LCLK  &mkp MCLK   &mkp RCLK    &mkp MB4    &mmv MOVE_DOWN   &kp PG_UP  &kp END   &kp UP    &kp HOME   &trans      &trans
-&trans       &kp TILDE   &trans     &trans      &trans       &mkp MB5    &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DELETE  &trans
-&trans       &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &trans      &mmv MOVE_RIGHT  &trans     &trans    &trans    &trans     &trans      &trans
-&kp C_MUTE   &trans      &trans     &trans      &trans       &trans      &mkp LCLK        &trans     &trans    &trans    &trans     &trans
+&kp C_RESET  &none       &none      &none       &none        &none       &mmv MOVE_UP     &none      &none     &none     &none      &none       &none
+&none        &kp GRAVE   &mkp LCLK  &mkp MCLK   &mkp RCLK    &mkp MB4    &mmv MOVE_DOWN   &kp PG_UP  &kp END   &kp UP    &kp HOME   &none       &none
+&none        &kp TILDE   &none      &none       &none        &mkp MB5    &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DELETE  &none
+&none        &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &none       &mmv MOVE_RIGHT  &none      &none     &none     &none      &none       &none
+&kp C_MUTE   &none       &none      &none       &none        &none       &mkp LCLK        &none      &none     &none     &none      &none
             >;
 
             display-name = "layer1";
@@ -86,7 +86,7 @@
 &kp GRAVE  &kp N1        &kp N2       &kp N3     &kp N4          &kp N5             &mmv MOVE_DOWN   &kp N6     &kp N7         &kp N8    &kp N9                &kp N0                 &kp F12
 &kp TAB    &kp EXCL      &kp AT_SIGN  &kp POUND  &kp DOLLAR      &kp PERCENT        &mmv MOVE_LEFT   &kp CARET  &kp AMPERSAND  &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
 &kp LSHFT  &kp LS(PLUS)  &kp MINUS    &kp PLUS   &kp LEFT_BRACE  &kp RIGHT_BRACE    &mmv MOVE_RIGHT  &kp LBKT   &kp RBKT       &kp SEMI  &kp COLON             &kp BSLH               &kp RSHFT
-&trans     &kp LCTRL     &kp LALT     &kp LGUI   &trans          &kp ENTER          &mkp LCLK        &kp SPACE  &trans         &trans    &trans                &trans
+&none      &kp LCTRL     &kp LALT     &kp LGUI   &none           &kp ENTER          &mkp LCLK        &kp SPACE  &none          &none     &none                 &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -94,11 +94,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp EQUAL  &kp FSLH  &kp STAR  &kp BSPC  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp N7     &kp N8    &kp N9    &kp BSPC  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp N4     &kp N5    &kp N6    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp N1     &kp N2    &kp N3    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &kp N0    &trans    &trans
+&none  &none  &none  &none  &none  &none    &none  &none  &kp EQUAL  &kp FSLH  &kp STAR  &kp BSPC  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &kp N7     &kp N8    &kp N9    &kp BSPC  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &kp N4     &kp N5    &kp N6    &none     &none
+&none  &none  &none  &none  &none  &none    &none  &none  &kp N1     &kp N2    &kp N3    &none     &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none      &kp N0    &none     &none
             >;
         };
     };
