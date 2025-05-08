@@ -44,6 +44,7 @@
         quest_mark {
             bindings = <&kp QUESTION>;
             key-positions = <50 51>;
+            layers = <0>;
         };
 
         exc_mark {
