@@ -266,10 +266,13 @@ combos:
   l: [LAYER0]
 - p: [50, 51]
   k: '?'
+  l: [LAYER0]
 - p: [0, 1]
   k: '!'
   l: [LAYER0]
 - p: [23, 24]
   k: '{'
+  l: [LAYER0]
 - p: [24, 25]
   k: '}'
+  l: [LAYER0]
