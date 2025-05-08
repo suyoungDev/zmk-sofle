@@ -264,6 +264,3 @@ combos:
 - p: [0, 13]
   k: $$mdi:keyboard-esc$$
   l: [LAYER0]
-- p: [57, 59]
-  k: {t: '$$mdi:keyboard-return$$', type: enter}
-  l: [LAYER0]
