@@ -40,6 +40,27 @@
             key-positions = <0 13>;
             layers = <0>;
         };
+
+        quest_mark {
+            bindings = <&kp QUESTION>;
+            key-positions = <50 51>;
+        };
+
+        exc_mark {
+            bindings = <&kp EXCL>;
+            key-positions = <0 1>;
+            layers = <0>;
+        };
+
+        left_brace {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <23 24>;
+        };
+
+        right_brace {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <24 25>;
+        };
     };
 
     behaviors {
@@ -63,11 +84,11 @@
 
         layer_1 {
             bindings = <
-&kp C_RESET  &none       &none      &none       &none        &none       &mmv MOVE_UP     &none      &none     &none     &none      &none       &none
-&none        &kp GRAVE   &mkp LCLK  &mkp MCLK   &mkp RCLK    &mkp MB4    &mmv MOVE_DOWN   &kp PG_UP  &kp END   &kp UP    &kp HOME   &none       &none
-&none        &kp TILDE   &none      &none       &none        &mkp MB5    &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DELETE  &none
-&none        &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &none       &mmv MOVE_RIGHT  &none      &none     &none     &none      &none       &none
-&kp C_MUTE   &none       &none      &none       &none        &none       &mkp LCLK        &none      &none     &none     &none      &none
+&kp C_RESET  &none      &none      &none      &none      &none       &mmv MOVE_UP     &none      &none     &none     &none      &none       &none
+&none        &none      &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB4    &mmv MOVE_DOWN   &kp PG_UP  &kp END   &kp UP    &kp HOME   &none       &none
+&none        &kp TILDE  &none      &none      &none      &mkp MB5    &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DELETE  &none
+&none        &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &none       &mmv MOVE_RIGHT  &none      &none     &none     &none      &none       &none
+&kp C_MUTE   &none      &none      &none      &none      &none       &mkp LCLK        &none      &none     &none     &none      &none
             >;
 
             display-name = "layer1";
@@ -76,11 +97,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &kp F1     &kp F2       &kp F3     &kp F4          &kp F5             &mmv MOVE_UP     &kp F6     &kp F7         &kp F8    &kp F9                &kp F10                &kp F11
-&kp GRAVE  &kp N1     &kp N2       &kp N3     &kp N4          &kp N5             &mmv MOVE_DOWN   &kp N6     &kp N7         &kp N8    &kp N9                &kp N0                 &kp F12
-&kp TAB    &kp EXCL   &kp AT_SIGN  &kp POUND  &kp DOLLAR      &kp PERCENT        &mmv MOVE_LEFT   &kp CARET  &kp AMPERSAND  &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
-&kp LSHFT  &kp PLUS   &kp MINUS    &kp PLUS   &kp LEFT_BRACE  &kp RIGHT_BRACE    &mmv MOVE_RIGHT  &kp LBKT   &kp RBKT       &kp SEMI  &kp COLON             &kp BSLH               &kp RSHFT
-&none      &kp LCTRL  &kp LALT     &kp LGUI   &none           &kp ENTER          &mkp LCLK        &kp SPACE  &none          &none     &none                 &none
+&kp TILDE  &kp EXCL   &kp AT     &kp HASH  &kp DOLLAR      &kp PERCENT        &mmv MOVE_UP     &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F12
+&kp GRAVE  &kp F1     &kp F2     &kp F3    &kp F4          &kp F5             &mmv MOVE_DOWN   &kp F6     &kp F7         &kp F8        &kp F9                &kp F10                &kp F11
+&kp TAB    &none      &none      &none     &none           &none              &mmv MOVE_LEFT   &none      &none          &none         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE
+&kp LSHFT  &kp PLUS   &kp MINUS  &none     &kp LEFT_BRACE  &kp RIGHT_BRACE    &mmv MOVE_RIGHT  &kp LBKT   &kp RBKT       &kp SEMI      &kp COLON             &kp BSLH               &kp RSHFT
+&none      &kp LCTRL  &kp LALT   &kp LGUI  &none           &kp ENTER          &mkp LCLK        &kp SPACE  &none          &none         &none                 &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
