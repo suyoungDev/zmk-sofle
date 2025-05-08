@@ -171,7 +171,7 @@ layers:
   - )
   - '|'
   - $$mdi:apple-keyboard-shift$$
-  - Sft++
+  - +
   - {t: '-', s: _}
   - +
   - '{'
