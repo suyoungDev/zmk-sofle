@@ -94,6 +94,11 @@
             key-positions = <11 12>;
             layers = <0>;
         };
+
+        scroll {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <57 56>;
+        };
     };
 
     behaviors {
