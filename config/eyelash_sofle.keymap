@@ -155,7 +155,7 @@
 &none      &kp LCTRL  &kp LALT   &kp LGUI  &none           &kp ENTER          &mkp LCLK        &kp SPACE  &none          &none         &none                 &none
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp LG(RIGHT_ARROW) LG(LEFT_ARROW)>;
         };
 
         layer_3 {
