@@ -64,6 +64,18 @@
             key-positions = <24 25>;
             layers = <0>;
         };
+
+        left_parenthesis {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <11 10>;
+            layers = <0>;
+        };
+
+        right_parenthesis {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <11 12>;
+            layers = <0>;
+        };
     };
 
     behaviors {
