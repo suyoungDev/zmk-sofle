@@ -284,3 +284,5 @@ combos:
   l: [LAYER0]
 - p: [50, 51]
   k: $$mdi:apple-keyboard-shift$$
+- p: [36, 37]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
