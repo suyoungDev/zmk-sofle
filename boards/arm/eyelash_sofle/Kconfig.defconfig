@@ -88,22 +88,4 @@ config LED_PWM
 
 endif # ZMK_BACKLIGHT
 
-#
-# Tap Settings
-#
-config ZMK_TAPPING_TERM
-    default 200
-
-config ZMK_TAP_PREFERRED
-    default n
-
-config ZMK_PERMISSIVE_HOLD
-    default n
-
-config ZMK_IGNORE_MOD_TAP_INTERRUPT
-    default n
-
-config ZMK_TAP_HOLD_THRESHOLD
-    default 50
-
 endif # BOARD_EYELASH_SOFLE_LEFT || BOARD_EYELASH_SOFLE_RIGHT
