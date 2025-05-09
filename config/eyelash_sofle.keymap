@@ -143,7 +143,7 @@
             >;
 
             display-name = "layer1";
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp LG(RIGHT_ARROW) LG(LEFT_ARROW)>;
         };
 
         layer_2 {
