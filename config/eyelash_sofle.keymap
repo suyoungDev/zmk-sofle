@@ -81,6 +81,11 @@
             bindings = <&kp RIGHT_SHIFT>;
             key-positions = <50 51>;
         };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <36 37>;
+        };
     };
 
     behaviors {
