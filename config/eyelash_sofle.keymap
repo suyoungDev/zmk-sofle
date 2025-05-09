@@ -153,7 +153,7 @@
 &none       &none      &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB4    &mmv MOVE_DOWN   &kp PG_UP  &kp HOME  &kp UP    &kp END    &none  &none
 &none       &none      &none      &none      &none      &none       &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none
 &none       &kp LG(Z)  &kp LG(X)  &copy      &paste     &none       &mmv MOVE_RIGHT  &none      &none     &none     &none      &none  &none
-&kp C_MUTE  &kp LCTRL  &kp LALT   &kp LGUI   &none      &none       &mkp LCLK        &none      &none     &none     &none      &none
+&none       &kp LCTRL  &kp LALT   &kp LGUI   &none      &none       &mkp LCLK        &none      &none     &none     &none      &none
             >;
 
             display-name = "layer1";
