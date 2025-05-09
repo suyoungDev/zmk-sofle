@@ -171,8 +171,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: Z, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: X, h: '$$mdi:apple-keyboard-command$$'}
+  - '&undo'
+  - '&cut'
   - '&copy'
   - '&paste'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -418,3 +418,13 @@ combos:
 - p: [36, 37]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [LAYER0]
+- p: [8, 9]
+  k: {t: '-', s: _}
+- p: [40, 41]
+  k: '&undo'
+- p: [41, 42]
+  k: '&cut'
+- p: [41, 42]
+  k: '&copy'
+- p: [42, 43]
+  k: '&paste'
