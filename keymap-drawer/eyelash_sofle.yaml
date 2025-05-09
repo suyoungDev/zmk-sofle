@@ -356,3 +356,5 @@ combos:
 - p: [11, 12]
   k: {t: '$$mdi:backspace$$', type: backspace}
   l: [LAYER0]
+- p: [57, 56]
+  k: $$mdi:pan-up$$
