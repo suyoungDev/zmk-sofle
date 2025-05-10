@@ -253,21 +253,25 @@
         td_brackets_left {
             bindings = <&td_bracket_left>;
             key-positions = <13 14>;
+            layers = <0>;
         };
 
         td_brackets_right {
             bindings = <&td_bracket_right>;
             key-positions = <24 25>;
+            layers = <0>;
         };
 
         refresh {
             bindings = <&td_refresh>;
             key-positions = <4 5>;
+            layers = <0>;
         };
 
         td_grave {
             bindings = <&td_shift_grave>;
             key-positions = <0 1>;
+            layers = <0>;
         };
     };
 
@@ -320,7 +324,7 @@
 &kp TAB          &kp Q        &kp W          &kp E              &kp R            &kp T          &kp DOWN_ARROW   &kp Y        &kp U             &kp I         &kp O         &kp P        &kp BSLH
 &kp CAPS         &kp A        &hml LCTRL S   &hml LEFT_ALT D    &hml LEFT_GUI F  &kp G          &kp LEFT_ARROW   &kp H        &hmr RIGHT_GUI J  &hmr RCTRL K  &hmr RCTRL L  &kp SEMI     &kp APOS
 &OSM LEFT_SHIFT  &kp Z        &kp X          &kp C              &kp V            &kp B          &kp RIGHT_ARROW  &kp N        &kp M             &kp COMMA     &kp DOT       &kp FSLH     &kp RET
-&kp C_MUTE       &OSM LCTRL   &OSM LEFT_ALT  &OSM LEFT_COMMAND  &mo 0            &kp SPACE      &kp ENTER        &kp SPACE    &kp B             &mo 1         &mo 1         &none
+&kp C_MUTE       &OSM LCTRL   &OSM LEFT_ALT  &OSM LEFT_COMMAND  &kp SPACE        &mo 1          &kp ENTER        &kp SPACE    &kp B             &mo 1         &mo 1         &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
