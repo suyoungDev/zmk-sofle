@@ -191,6 +191,13 @@
             <&kp RIGHT_BRACKET>;
     };
 
+    td_refresh: td_refresh {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TD_REFRESH";
+        #binding-cells = <0>;
+        bindings = <&kp F5>, <&hard_refresh>;
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -240,13 +247,13 @@
 
         td_equal {
             bindings = <&td_shift_equal>;
-            key-positions = <10 11>;
+            key-positions = <11 12>;
             layers = <0>;
         };
 
         td_minus {
             bindings = <&td_shift_dash>;
-            key-positions = <11 12>;
+            key-positions = <11 10>;
             layers = <0>;
         };
 
@@ -258,6 +265,11 @@
         td_brackets_right {
             bindings = <&td_bracket_right>;
             key-positions = <11 12>;
+        };
+
+        refresh {
+            bindings = <&td_refresh>;
+            key-positions = <4 5>;
         };
     };
 
@@ -291,6 +303,13 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_COMMAND &kp X>;
             label = "CUT";
+        };
+
+        hard_refresh: hard_refresh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp LEFT_SHIFT &kp F5>;
+            label = "HARD_REFRESH";
         };
     };
 
