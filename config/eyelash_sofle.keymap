@@ -268,7 +268,7 @@
         };
 
         td_brackets_right {
-            bindings = <&none>;
+            bindings = <&td_bracket_right>;
             key-positions = <15 14>;
         };
     };
