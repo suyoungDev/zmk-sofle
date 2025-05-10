@@ -218,6 +218,7 @@
             bindings = <&cut>;
             key-positions = <41 42>;
             layers = <0>;
+            require-prior-idle-ms = <50>;
         };
 
         copy {
