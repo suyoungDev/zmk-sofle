@@ -206,18 +206,6 @@
             layers = <0>;
         };
 
-        left_brace {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <11 10>;
-            layers = <0>;
-        };
-
-        right_brace {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <11 12>;
-            layers = <0>;
-        };
-
         enter {
             bindings = <&kp ENTER>;
             key-positions = <36 37 35>;
@@ -252,13 +240,13 @@
 
         td_equal {
             bindings = <&td_shift_equal>;
-            key-positions = <8 9>;
+            key-positions = <10 11>;
             layers = <0>;
         };
 
         td_minus {
             bindings = <&td_shift_dash>;
-            key-positions = <7 8>;
+            key-positions = <11 12>;
             layers = <0>;
         };
 
@@ -270,6 +258,16 @@
         td_brackets_right {
             bindings = <&td_bracket_right>;
             key-positions = <15 14>;
+        };
+
+        td_brackets_left_1 {
+            bindings = <&td_bracket_left>;
+            key-positions = <23 24>;
+        };
+
+        td_brackets_right_2 {
+            bindings = <&td_bracket_right>;
+            key-positions = <24 25>;
         };
     };
 
