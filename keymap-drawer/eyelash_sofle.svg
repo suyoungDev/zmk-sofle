@@ -634,6 +634,12 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="630" y="22" width="28" height="26" class="combo"/>
 <text x="644" y="35" class="combo tap"><tspan style="font-size: 60%">&amp;td_shift…</tspan></text>
 </g>
+<g class="combo enter combopos-11">
+<path d="M140,40 l-38,11" class="combo"/>
+<path d="M140,40 l38,-8" class="combo"/>
+<rect rx="6" ry="6" x="126" y="27" width="28" height="26" class="combo enter"/>
+<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="131" y="31" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 388)" class="layer-4">

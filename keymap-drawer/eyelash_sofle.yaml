@@ -164,3 +164,6 @@ combos:
 - p: [7, 8]
   k: '&td_shift_dash'
   l: [LAYER0]
+- p: [1, 2, 3]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
+  l: [LAYER0]
