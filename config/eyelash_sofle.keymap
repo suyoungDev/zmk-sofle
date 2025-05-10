@@ -252,22 +252,12 @@
 
         td_brackets_left {
             bindings = <&td_bracket_left>;
-            key-positions = <14 13>;
+            key-positions = <0 1>;
         };
 
         td_brackets_right {
             bindings = <&td_bracket_right>;
-            key-positions = <15 14>;
-        };
-
-        td_brackets_left_1 {
-            bindings = <&td_bracket_left>;
-            key-positions = <23 24>;
-        };
-
-        td_brackets_right_2 {
-            bindings = <&td_bracket_right>;
-            key-positions = <24 25>;
+            key-positions = <11 12>;
         };
     };
 
