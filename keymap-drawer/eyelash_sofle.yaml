@@ -57,8 +57,8 @@ layers:
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
-  - LAYER0
   - $$mdi:keyboard-space$$
+  - '1'
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
   - B
@@ -123,11 +123,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - '&mkp MB1'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {type: held alternate}
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
@@ -160,9 +160,13 @@ combos:
   l: [LAYER0]
 - p: [13, 14]
   k: '&td_bracket_left'
+  l: [LAYER0]
 - p: [24, 25]
   k: '&td_bracket_right'
+  l: [LAYER0]
 - p: [4, 5]
   k: '&td_refresh'
+  l: [LAYER0]
 - p: [0, 1]
   k: '&td_shift_grave'
+  l: [LAYER0]
