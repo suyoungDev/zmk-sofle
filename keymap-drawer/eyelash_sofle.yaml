@@ -31,11 +31,11 @@ layers:
   - A
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: G, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
+  - G
   - $$mdi:arrow-left-bold$$
-  - {t: H, h: RIGHT GUI}
-  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
+  - H
+  - {t: J, h: RIGHT GUI}
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
   - {t: ;, s: ':'}
@@ -152,10 +152,10 @@ combos:
 - p: [41, 42]
   k: '&cut'
   l: [LAYER0]
-- p: [41, 42]
+- p: [42, 43]
   k: '&copy'
   l: [LAYER0]
-- p: [42, 43]
+- p: [43, 44]
   k: '&paste'
   l: [LAYER0]
 - p: [8, 9]
