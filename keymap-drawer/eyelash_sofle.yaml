@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
   LAYER0:
-  - $$mdi:keyboard-esc$$
+  - '&td_esc'
   - '&td_shift_1'
   - '&td_shift_2'
   - '&td_shift_3'
@@ -228,7 +228,4 @@ combos:
   l: [LAYER0]
 - p: [7, 8]
   k: '&td_shift_dash'
-  l: [LAYER0]
-- p: [0, 1]
-  k: '&td_shift_grave'
   l: [LAYER0]
