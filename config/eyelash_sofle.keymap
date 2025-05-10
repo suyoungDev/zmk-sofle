@@ -266,7 +266,7 @@
         };
 
         td_grave {
-            bindings = <&none>;
+            bindings = <&td_shift_grave>;
             key-positions = <0 1>;
         };
     };
