@@ -167,4 +167,4 @@ combos:
 - p: [14, 13]
   k: '&td_bracket_left'
 - p: [15, 14]
-  k: {t: '$$mdi:minus-circle-outline$$', type: none}
+  k: '&td_bracket_right'
