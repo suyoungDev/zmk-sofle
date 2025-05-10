@@ -137,12 +137,6 @@ combos:
 - p: [0, 13]
   k: '!'
   l: [LAYER0]
-- p: [11, 10]
-  k: '{'
-  l: [LAYER0]
-- p: [11, 12]
-  k: '}'
-  l: [LAYER0]
 - p: [36, 37, 35]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [LAYER0]
@@ -158,13 +152,17 @@ combos:
 - p: [43, 44]
   k: '&paste'
   l: [LAYER0]
-- p: [8, 9]
+- p: [10, 11]
   k: '&td_shift_equal'
   l: [LAYER0]
-- p: [7, 8]
+- p: [11, 12]
   k: '&td_shift_dash'
   l: [LAYER0]
 - p: [14, 13]
   k: '&td_bracket_left'
 - p: [15, 14]
+  k: '&td_bracket_right'
+- p: [23, 24]
+  k: '&td_bracket_left'
+- p: [24, 25]
   k: '&td_bracket_right'
