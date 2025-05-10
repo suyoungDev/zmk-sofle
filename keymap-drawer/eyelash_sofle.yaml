@@ -15,7 +15,7 @@ layers:
   - '&td_shift_0'
   - '&td_backspace'
   - $$mdi:keyboard-tab$$
-  - {t: Q, h: A}
+  - Q
   - W
   - E
   - R
