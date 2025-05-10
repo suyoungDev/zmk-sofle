@@ -165,4 +165,4 @@ combos:
 - p: [4, 5]
   k: '&td_refresh'
 - p: [0, 1]
-  k: {t: '$$mdi:minus-circle-outline$$', type: none}
+  k: '&td_shift_grave'
