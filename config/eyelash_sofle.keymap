@@ -151,14 +151,15 @@
         bindings = <&kp GRAVE>, <&kp TILDE>;
     };
 
+    td_backspace: td_backspace {
+        compatible = "zmk,behavior-tap-dance";
+        label = "TD_BACKSPACE";
+        #binding-cells = <0>;
+        bindings = <&kp BACKSPACE>, <&kp DELETE>;
+    };
+
     combos {
         compatible = "zmk,combos";
-
-        esc_combo {
-            bindings = <&kp GRAVE>;
-            key-positions = <0 1>;
-            layers = <0>;
-        };
 
         quest_mark {
             bindings = <&kp QUESTION>;
@@ -184,53 +185,53 @@
             layers = <0>;
         };
 
-        left_parenthesis {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <10 9>;
-            layers = <0>;
-        };
-
-        right_parenthesis {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <11 10>;
-            layers = <0>;
-        };
-
-        right_shift {
-            bindings = <&kp RIGHT_SHIFT>;
-            key-positions = <50 51>;
-            layers = <0>;
-        };
-
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <36 37>;
+            key-positions = <36 37 35>;
             layers = <0>;
-        };
-
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <8 9>;
+            timeout-ms = <200>;
         };
 
         undo {
             bindings = <&undo>;
             key-positions = <40 41>;
+            layers = <0>;
         };
 
         cut {
             bindings = <&cut>;
             key-positions = <41 42>;
+            layers = <0>;
         };
 
         copy {
             bindings = <&copy>;
             key-positions = <41 42>;
+            layers = <0>;
         };
 
         paste {
             bindings = <&paste>;
             key-positions = <42 43>;
+            layers = <0>;
+        };
+
+        td_equal {
+            bindings = <&td_shift_equal>;
+            key-positions = <8 9>;
+            layers = <0>;
+        };
+
+        td_minus {
+            bindings = <&td_shift_dash>;
+            key-positions = <7 8>;
+            layers = <0>;
+        };
+
+        td_grave {
+            bindings = <&td_shift_grave>;
+            key-positions = <0 1>;
+            layers = <0>;
         };
     };
 
@@ -272,40 +273,15 @@
 
         layer0 {
             bindings = <
-&kp ESC     &td_shift_1  &td_shift_2   &td_shift_3       &td_shift_4  &td_shift_5    &kp UP_ARROW     &td_shift_6  &td_shift_7  &td_shift_8  &td_shift_9  &td_shift_0  &kp BACKSPACE
+&kp ESC     &td_shift_1  &td_shift_2   &td_shift_3       &td_shift_4  &td_shift_5    &kp UP_ARROW     &td_shift_6  &td_shift_7  &td_shift_8  &td_shift_9  &td_shift_0  &td_backspace
 &kp TAB     &kp Q        &kp W         &kp E             &kp R        &kp T          &kp DOWN_ARROW   &kp Y        &kp U        &kp I        &kp O        &kp P        &kp BSLH
 &kp CAPS    &kp A        &kp S         &kp D             &kp F        &kp G          &kp LEFT_ARROW   &kp H        &kp J        &kp K        &kp L        &kp SEMI     &kp APOS
 &kp LSHFT   &kp Z        &kp X         &kp C             &kp V        &kp B          &kp RIGHT_ARROW  &kp N        &kp M        &kp COMMA    &kp DOT      &kp FSLH     &kp RET
-&kp C_MUTE  &kp LCTRL    &kp LEFT_ALT  &kp LEFT_COMMAND  &mo 1        &kp SPACE      &kp ENTER        &kp SPACE    &kp B        &mo 2        &mo 3        &mo 4
+&kp C_MUTE  &kp LCTRL    &kp LEFT_ALT  &kp LEFT_COMMAND  &mo 0        &kp SPACE      &kp ENTER        &kp SPACE    &kp B        &mo 0        &mo 1        &mo 2
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "LAYER0";
-        };
-
-        layer_1 {
-            bindings = <
-&kp TILDE  &kp EXCL   &kp AT    &kp HASH  &kp DOLLAR  &kp PERCENT    &mmv MOVE_UP     &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp MINUS          &kp EQUAL
-&kp GRAVE  &kp F1     &kp F2    &kp F3    &kp F4      &kp F5         &mmv MOVE_DOWN   &kp F6     &kp F7         &kp F8        &kp F9                &kp F10            &kp F11
-&kp TAB    &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT   &none          &mmv MOVE_LEFT   &none      &none          &none         &kp LEFT_BRACE        &kp RIGHT_BRACE    &kp F12
-&none      &none      &none     &none     &none       &none          &mmv MOVE_RIGHT  &none      &none          &none         &kp LBKT              &kp RIGHT_BRACKET  &kp ENTER
-&none      &none      &none     &none     &none       &kp ENTER      &mkp LCLK        &none      &none          &none         &none                 &none
-            >;
-
-            sensor-bindings = <&inc_dec_kp LG(RIGHT_ARROW) LG(LEFT_ARROW)>;
-        };
-
-        layer_2 {
-            bindings = <
-&sys_reset  &none      &none      &none      &none      &none       &mmv MOVE_UP     &none      &none     &none     &none      &none  &none
-&none       &none      &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB4    &mmv MOVE_DOWN   &kp PG_UP  &kp HOME  &kp UP    &kp END    &none  &none
-&none       &none      &none      &none      &none      &none       &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none
-&none       &undo      &cut       &copy      &paste     &none       &mmv MOVE_RIGHT  &none      &none     &none     &none      &none  &none
-&none       &kp LCTRL  &kp LALT   &kp LGUI   &none      &none       &mkp LCLK        &none      &none     &none     &none      &none
-            >;
-
-            display-name = "pointing layer";
-            sensor-bindings = <&inc_dec_kp LG(RIGHT_ARROW) LG(LEFT_ARROW)>;
         };
 
         layer_3 {
@@ -325,16 +301,6 @@
 &trans      &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &trans    &trans  &trans  &kp F4   &kp F5   &kp F6   &trans  &trans
 &trans      &trans     &trans    &trans    &trans     &trans    &trans  &trans  &kp F1   &kp F2   &kp F3   &trans  &trans
 &trans      &trans     &trans    &trans    &trans     &trans    &trans  &trans  &trans   &trans   &trans   &trans
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
