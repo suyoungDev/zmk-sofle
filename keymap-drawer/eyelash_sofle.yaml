@@ -152,13 +152,15 @@ combos:
 - p: [43, 44]
   k: '&paste'
   l: [LAYER0]
-- p: [10, 11]
+- p: [11, 12]
   k: '&td_shift_equal'
   l: [LAYER0]
-- p: [11, 12]
+- p: [11, 10]
   k: '&td_shift_dash'
   l: [LAYER0]
 - p: [0, 1]
   k: '&td_bracket_left'
 - p: [11, 12]
   k: '&td_bracket_right'
+- p: [4, 5]
+  k: '&td_refresh'
