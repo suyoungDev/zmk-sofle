@@ -243,6 +243,13 @@
             key-positions = <7 8>;
             layers = <0>;
         };
+
+        enter_test {
+            bindings = <&kp ENTER>;
+            key-positions = <1 2 3>;
+            timeout-ms = <200>;
+            layers = <0>;
+        };
     };
 
     behaviors {
