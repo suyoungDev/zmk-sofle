@@ -62,7 +62,7 @@
         compatible = "zmk,behavior-tap-dance";
         label = "TD_SHIFT_1";
         #binding-cells = <0>;
-        bindings = <&kp NUMBER_1>, <&kp EXCLAMATION>;
+        bindings = <&kp NUMBER_1>, <&kp EXCLAMATION>, <&kp F1>;
 
         tapping-term-ms = <200>;
     };
@@ -71,63 +71,63 @@
         compatible = "zmk,behavior-tap-dance";
         label = "TD_SHIFT_2";
         #binding-cells = <0>;
-        bindings = <&kp NUMBER_2>, <&kp AT_SIGN>;
+        bindings = <&kp NUMBER_2>, <&kp AT_SIGN>, <&kp F2>;
     };
 
     td_shift_3: td_shift_3 {
         compatible = "zmk,behavior-tap-dance";
         label = "TD_SHIFT_3";
         #binding-cells = <0>;
-        bindings = <&kp NUMBER_3>, <&kp HASH>;
+        bindings = <&kp NUMBER_3>, <&kp HASH>, <&kp F3>;
     };
 
     td_shift_4: td_shift_4 {
         compatible = "zmk,behavior-tap-dance";
         label = "TD_SHIFT_4";
         #binding-cells = <0>;
-        bindings = <&kp NUMBER_4>, <&kp DOLLAR>;
+        bindings = <&kp NUMBER_4>, <&kp DOLLAR>, <&kp F4>;
     };
 
     td_shift_6: td_shift_6 {
         compatible = "zmk,behavior-tap-dance";
         label = "TD_SHIFT_6";
         #binding-cells = <0>;
-        bindings = <&kp NUMBER_6>, <&kp CARET>;
+        bindings = <&kp NUMBER_6>, <&kp CARET>, <&kp F6>;
     };
 
     td_shift_5: td_shift_5 {
         compatible = "zmk,behavior-tap-dance";
         label = "TD_SHIFT_5";
         #binding-cells = <0>;
-        bindings = <&kp N5>, <&kp PERCENT>;
+        bindings = <&kp N5>, <&kp PERCENT>, <&kp F5>;
     };
 
     td_shift_7: td_shift_7 {
         compatible = "zmk,behavior-tap-dance";
         label = "TD_SHIFT_7";
         #binding-cells = <0>;
-        bindings = <&kp N7>, <&kp AMPERSAND>;
+        bindings = <&kp N7>, <&kp AMPERSAND>, <&kp F17>;
     };
 
     td_shift_8: td_shift_8 {
         compatible = "zmk,behavior-tap-dance";
         label = "TD_SHIFT_8";
         #binding-cells = <0>;
-        bindings = <&kp N8>, <&kp ASTERISK>;
+        bindings = <&kp N8>, <&kp ASTERISK>, <&kp F8>;
     };
 
     td_shift_9: td_shift_9 {
         compatible = "zmk,behavior-tap-dance";
         label = "TD_SHIFT_9";
         #binding-cells = <0>;
-        bindings = <&kp N9>, <&kp LEFT_PARENTHESIS>;
+        bindings = <&kp N9>, <&kp LEFT_PARENTHESIS>, <&kp F9>;
     };
 
     td_shift_0: td_shift_0 {
         compatible = "zmk,behavior-tap-dance";
         label = "TD_SHIFT_0";
         #binding-cells = <0>;
-        bindings = <&kp N0>, <&kp RIGHT_PARENTHESIS>;
+        bindings = <&kp N0>, <&kp RIGHT_PARENTHESIS>, <&kp F10>;
     };
 
     td_shift_dash: td_shift_dash {
