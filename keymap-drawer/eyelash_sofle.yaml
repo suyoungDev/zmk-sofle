@@ -2,17 +2,17 @@ layout: {zmk_keyboard: eyelash_sofle}
 layers:
   LAYER0:
   - $$mdi:keyboard-esc$$
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
+  - '&td_shift N1'
+  - '&td_shift_2'
+  - '&td_shift_3'
+  - '&td_shift_4'
+  - '&td_shift_5'
   - $$mdi:arrow-up-bold$$
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
+  - '&td_shift_6'
+  - '&td_shift_7'
+  - '&td_shift_8'
+  - '&td_shift_9'
+  - '&td_shift_0'
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab$$
   - Q
