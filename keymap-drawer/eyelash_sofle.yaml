@@ -29,15 +29,15 @@ layers:
   - {t: \, s: '|'}
   - {t: '$$mdi:apple-keyboard-caps$$', h: '$$mdi:gesture-tap-hold$$'}
   - A
-  - S
-  - D
-  - F
-  - G
+  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: G, h: '$$mdi:apple-keyboard-command$$'}
   - $$mdi:arrow-left-bold$$
-  - H
-  - J
-  - K
-  - L
+  - {t: H, h: RIGHT GUI}
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
