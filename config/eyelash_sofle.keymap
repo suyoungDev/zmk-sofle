@@ -257,12 +257,14 @@
             bindings = <&td_bracket_left>;
             key-positions = <13 14>;
             layers = <0>;
+            timeout-ms = <150>;
         };
 
         td_brackets_right {
             bindings = <&td_bracket_right>;
             key-positions = <24 25>;
             layers = <0>;
+            timeout-ms = <150>;
         };
 
         refresh {
@@ -320,7 +322,7 @@
         hard_refresh: hard_refresh {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp LEFT_SHIFT &kp F5>;
+            bindings = <&kp LS(LG(F5))>;
             label = "HARD_REFRESH";
         };
     };
