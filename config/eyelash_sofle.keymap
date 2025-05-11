@@ -194,7 +194,7 @@
     mod_morph_test: mod_morph_test {
         compatible = "zmk,behavior-mod-morph";
         label = "MOD_MORPH_TEST";
-        bindings = <&kp A>, <&left_word_grab>;
+        bindings = <&kp A>, <&kp LS(LC(LEFT_ARROW))>;
 
         #binding-cells = <0>;
         mods = <(MOD_LSFT)>;
@@ -321,13 +321,6 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_GUI &kp LEFT_SHIFT &kp F5>;
             label = "HARD_REFRESH";
-        };
-
-        left_word_grab: left_word_grab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LG(LEFT_ARROW))>;
-            label = "LEFT_WORD_GRAB";
         };
     };
 
