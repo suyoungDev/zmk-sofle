@@ -35,9 +35,9 @@ layers:
   - {t: G, h: 'Sft+$$mdi:apple-keyboard-command$$'}
   - $$mdi:arrow-left-bold$$
   - H
-  - {t: J, h: RIGHT GUI}
-  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
+  - J
+  - K
+  - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
