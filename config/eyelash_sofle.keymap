@@ -348,6 +348,8 @@
 &trans  &trans  &trans     &trans    &trans     &trans    &mmv MOVE_RIGHT  &trans  &kp F1   &kp F2   &kp F3  &trans  &trans
 &trans  &trans  &trans     &trans    &trans     &trans    &mkp MB1         &trans  &trans   &trans   &trans  &trans
             >;
+
+            sensor-bindings = <&scroll_encoder>;
         };
     };
 };
