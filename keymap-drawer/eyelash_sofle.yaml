@@ -28,7 +28,7 @@ layers:
   - P
   - {t: \, s: '|'}
   - $$mdi:apple-keyboard-caps$$
-  - {t: A, s: '&left_word_grab'}
+  - {t: A, s: 'Sft+Ctl+$$mdi:arrow-left-bold$$'}
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F, h: '$$mdi:apple-keyboard-command$$'}
