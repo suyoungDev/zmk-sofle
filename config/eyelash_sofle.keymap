@@ -58,76 +58,76 @@
         flavor = "tap-preferred";
     };
 
-    td_shift_1: td_shift_1 {
+    tdh_1: tdh_1 {
         compatible = "zmk,behavior-tap-dance";
-        label = "TD_SHIFT_1";
+        label = "TDH_1";
         #binding-cells = <0>;
-        bindings = <&kp NUMBER_1>, <&kp EXCLAMATION>, <&kp F1>;
+        bindings = <&kp NUMBER_1>, <&tdh F1 EXCL>;
 
         tapping-term-ms = <200>;
     };
 
-    td_shift_2: td_shift_2 {
+    tdh_2: tdh_2 {
         compatible = "zmk,behavior-tap-dance";
-        label = "TD_SHIFT_2";
+        label = "TDH_2";
         #binding-cells = <0>;
-        bindings = <&kp NUMBER_2>, <&kp AT_SIGN>, <&kp F2>;
+        bindings = <&kp NUMBER_2>, <&tdh F2 AT_SIGN>;
     };
 
-    td_shift_3: td_shift_3 {
+    tdh_3: tdh_3 {
         compatible = "zmk,behavior-tap-dance";
-        label = "TD_SHIFT_3";
+        label = "TDH_3";
         #binding-cells = <0>;
-        bindings = <&kp NUMBER_3>, <&kp HASH>, <&kp F3>;
+        bindings = <&kp NUMBER_3>, <&tdh F3 HASH>;
     };
 
-    td_shift_4: td_shift_4 {
+    tdh_4: tdh_4 {
         compatible = "zmk,behavior-tap-dance";
-        label = "TD_SHIFT_4";
+        label = "TDH_4";
         #binding-cells = <0>;
-        bindings = <&kp NUMBER_4>, <&kp DOLLAR>, <&kp F4>;
+        bindings = <&kp NUMBER_4>, <&tdh F4 DOLLAR>;
     };
 
-    td_shift_6: td_shift_6 {
+    tdh_5: tdh_5 {
         compatible = "zmk,behavior-tap-dance";
-        label = "TD_SHIFT_6";
+        label = "TDH_5";
         #binding-cells = <0>;
-        bindings = <&kp NUMBER_6>, <&kp CARET>, <&kp F6>;
+        bindings = <&kp N5>, <&tdh F5 CARET>;
     };
 
-    td_shift_5: td_shift_5 {
+    tdh_6: tdh_6 {
         compatible = "zmk,behavior-tap-dance";
-        label = "TD_SHIFT_5";
+        label = "TDH_6";
         #binding-cells = <0>;
-        bindings = <&kp N5>, <&kp PERCENT>, <&kp F5>;
+        bindings = <&kp NUMBER_6>, <&tdh F6 CARET>;
     };
 
-    td_shift_7: td_shift_7 {
+    tdh_7: tdh_7 {
         compatible = "zmk,behavior-tap-dance";
-        label = "TD_SHIFT_7";
+        label = "TDH_7";
         #binding-cells = <0>;
-        bindings = <&kp N7>, <&kp AMPERSAND>, <&kp F17>;
+        bindings = <&kp N7>, <&tdh F7 AMPERSAND>, <&kp F17>;
     };
 
-    td_shift_8: td_shift_8 {
+    tdh_8: tdh_8 {
         compatible = "zmk,behavior-tap-dance";
-        label = "TD_SHIFT_8";
+        label = "TDH_8";
         #binding-cells = <0>;
-        bindings = <&kp N8>, <&kp ASTERISK>, <&kp F8>;
+        bindings = <&kp N8>, <&tdh F8 ASTERISK>, <&kp F8>;
     };
 
-    td_shift_9: td_shift_9 {
+    tdh_9: tdh_9 {
         compatible = "zmk,behavior-tap-dance";
-        label = "TD_SHIFT_9";
+        label = "TDH_9";
         #binding-cells = <0>;
-        bindings = <&kp N9>, <&kp LEFT_PARENTHESIS>, <&kp F9>;
+        bindings = <&kp N9>, <&tdh F9 LEFT_PARENTHESIS>, <&kp F9>;
     };
 
-    td_shift_0: td_shift_0 {
+    tdh_0: tdh_0 {
         compatible = "zmk,behavior-tap-dance";
-        label = "TD_SHIFT_0";
+        label = "TDH_0";
         #binding-cells = <0>;
-        bindings = <&kp N0>, <&kp RIGHT_PARENTHESIS>, <&kp F10>;
+        bindings = <&kp N0>, <&tdh F10 RIGHT_PARENTHESIS>, <&kp F10>;
     };
 
     td_shift_dash: td_shift_dash {
@@ -191,14 +191,17 @@
         bindings = <&kp BACKSLASH>, <&kp PIPE>;
     };
 
+    tdh: tdh {
+        compatible = "zmk,behavior-hold-tap";
+        label = "TDH";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <350>;
+    };
+
     combos {
         compatible = "zmk,combos";
-
-        quest_mark {
-            bindings = <&kp QUESTION>;
-            key-positions = <50 51>;
-            layers = <0>;
-        };
 
         exc_mark {
             bindings = <&kp EXCL>;
@@ -273,6 +276,13 @@
             key-positions = <0 1>;
             layers = <0>;
         };
+
+        won {
+            bindings = <&kp NON_US_BACKSLASH>;
+            key-positions = <0 1 2>;
+            layers = <0>;
+            timeout-ms = <150>;
+        };
     };
 
     behaviors {
@@ -320,11 +330,11 @@
 
         layer0 {
             bindings = <
-&kp ESCAPE       &td_shift_1  &td_shift_2    &td_shift_3        &td_shift_4      &td_shift_5            &kp UP_ARROW     &td_shift_6  &td_shift_7       &td_shift_8   &td_shift_9    &td_shift_0           &kp BACKSPACE
-&kp TAB          &kp Q        &kp W          &kp E              &kp R            &kp T                  &kp DOWN_ARROW   &kp Y        &kp U             &kp I         &kp O          &kp P                 &none
-&kp CAPS         &kp A        &hml LCTRL S   &hml LEFT_ALT D    &hml LEFT_GUI F  &hml LS(LEFT_GUI) G    &kp LEFT_ARROW   &kp H        &hmr RIGHT_GUI J  &hmr RCTRL K  &hmr RCTRL L   &kp SEMI              &kp APOS
-&OSM LEFT_SHIFT  &kp Z        &kp X          &kp C              &kp V            &kp B                  &kp RIGHT_ARROW  &kp N        &kp M             &kp COMMA     &kp DOT        &kp FSLH              &kp RET
-&kp C_MUTE       &OSM LCTRL   &OSM LEFT_ALT  &OSM LEFT_COMMAND  &kp SPACE        &mo 1                  &kp ENTER        &kp SPACE    &kp B             &mo 1         &hmr HOME END  &hmr PG_UP PAGE_DOWN
+&kp ESCAPE       &tdh_1      &tdh_2         &tdh_3             &tdh_4           &tdh_6                 &kp UP_ARROW     &tdh_5     &tdh_7            &tdh_8        &tdh_9         &tdh_0                &kp BACKSPACE
+&kp TAB          &kp Q       &kp W          &kp E              &kp R            &kp T                  &kp DOWN_ARROW   &kp Y      &kp U             &kp I         &kp O          &kp P                 &mt BACKSLASH PIPE
+&kp CAPS         &kp A       &hml LCTRL S   &hml LEFT_ALT D    &hml LEFT_GUI F  &hml LS(LEFT_GUI) G    &kp LEFT_ARROW   &kp H      &hmr RIGHT_GUI J  &hmr RCTRL K  &hmr RCTRL L   &kp SEMI              &kp APOS
+&OSM LEFT_SHIFT  &kp Z       &kp X          &kp C              &kp V            &kp B                  &kp RIGHT_ARROW  &kp N      &kp M             &kp COMMA     &kp DOT        &mt QUESTION FSLH     &kp RET
+&kp C_MUTE       &OSM LCTRL  &OSM LEFT_ALT  &OSM LEFT_COMMAND  &kp SPACE        &mo 1                  &kp ENTER        &kp SPACE  &kp B             &mo 1         &hmr HOME END  &hmr PG_UP PAGE_DOWN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -341,16 +351,6 @@
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_UP>;
-        };
-
-        layer_2 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
         };
     };
 };
