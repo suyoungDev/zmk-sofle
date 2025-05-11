@@ -332,11 +332,11 @@
 
         layer0 {
             bindings = <
-&kp ESCAPE       &tdh_1      &tdh_2         &tdh_3             &tdh_4           &tdh_5                 &kp UP_ARROW     &tdh_6     &tdh_7            &tdh_8        &tdh_9         &tdh_0                &kp BACKSPACE
-&kp TAB          &kp Q       &kp W          &kp E              &kp R            &kp T                  &kp DOWN_ARROW   &kp Y      &kp U             &kp I         &kp O          &kp P                 &mt BACKSLASH PIPE
-&kp CAPS         &kp A       &hml LCTRL S   &hml LEFT_ALT D    &hml LEFT_GUI F  &hml LS(LEFT_GUI) G    &kp LEFT_ARROW   &kp H      &hmr RIGHT_GUI J  &hmr RCTRL K  &hmr RCTRL L   &kp SEMI              &kp APOS
-&OSM LEFT_SHIFT  &kp Z       &kp X          &kp C              &kp V            &kp B                  &kp RIGHT_ARROW  &kp N      &kp M             &kp COMMA     &kp DOT        &mt QUESTION FSLH     &kp RET
-&kp C_MUTE       &OSM LCTRL  &OSM LEFT_ALT  &OSM LEFT_COMMAND  &kp SPACE        &mo 1                  &kp ENTER        &kp SPACE  &kp B             &mo 2         &hmr HOME END  &hmr PG_UP PAGE_DOWN
+&kp ESCAPE       &tdh_1      &tdh_2         &tdh_3             &tdh_4           &tdh_5                 &kp UP_ARROW     &tdh_6     &tdh_7            &tdh_8            &tdh_9         &tdh_0                &kp BACKSPACE
+&kp TAB          &kp Q       &kp W          &kp E              &kp R            &kp T                  &kp DOWN_ARROW   &kp Y      &kp U             &kp I             &kp O          &kp P                 &mt BACKSLASH PIPE
+&kp CAPS         &kp A       &hml LCTRL S   &hml LEFT_ALT D    &hml LEFT_GUI F  &hml LS(LEFT_GUI) G    &kp LEFT_ARROW   &kp H      &hmr RIGHT_GUI J  &hmr RIGHT_ALT K  &hmr RCTRL L   &kp SEMI              &kp APOS
+&OSM LEFT_SHIFT  &kp Z       &kp X          &kp C              &kp V            &kp B                  &kp RIGHT_ARROW  &kp N      &kp M             &kp COMMA         &kp DOT        &mt QUESTION FSLH     &kp RET
+&kp C_MUTE       &OSM LCTRL  &OSM LEFT_ALT  &OSM LEFT_COMMAND  &kp SPACE        &mo 1                  &kp ENTER        &kp SPACE  &kp B             &mo 2             &hmr HOME END  &hmr PG_UP PAGE_DOWN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
