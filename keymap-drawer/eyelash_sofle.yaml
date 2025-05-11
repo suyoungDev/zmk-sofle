@@ -6,9 +6,9 @@ layers:
   - '&tdh_2'
   - '&tdh_3'
   - '&tdh_4'
-  - '&tdh_6'
-  - $$mdi:arrow-up-bold$$
   - '&tdh_5'
+  - $$mdi:arrow-up-bold$$
+  - '&tdh_6'
   - '&tdh_7'
   - '&tdh_8'
   - '&tdh_9'
