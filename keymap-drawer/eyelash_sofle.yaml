@@ -40,7 +40,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: 'Sft+$$mdi:apple-keyboard-control$$', h: '$$mdi:apple-keyboard-shift$$'}
   - Z
   - X
   - C
@@ -58,7 +58,7 @@ layers:
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:keyboard-space$$
-  - '1'
+  - {t: '$$mdi:keyboard-space$$', h: '1'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
   - B
