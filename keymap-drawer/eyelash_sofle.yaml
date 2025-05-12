@@ -2,17 +2,17 @@ layout: {zmk_keyboard: eyelash_sofle}
 layers:
   LAYER0:
   - $$mdi:keyboard-esc$$
-  - '&tdh_1'
-  - '&tdh_2'
-  - '&tdh_3'
-  - '&tdh_4'
-  - '&tdh_5'
+  - {t: '1', h: '!'}
+  - {t: '2', h: '@'}
+  - {t: '3', h: '#'}
+  - {t: '4', h: $}
+  - {t: '5', h: '%', s: '%'}
   - $$mdi:arrow-up-bold$$
-  - '&tdh_6'
-  - '&tdh_7'
-  - '&tdh_8'
-  - '&tdh_9'
-  - '&tdh_0'
+  - {t: '6', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '7', h: '&', s: '&'}
+  - {t: '9', h: (, s: (}
+  - {t: (, h: '9'}
+  - {t: '0', h: ), s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab$$
   - Q
@@ -26,13 +26,13 @@ layers:
   - I
   - O
   - P
-  - {t: '|', h: \}
+  - {t: \, h: '|', s: '|'}
   - $$mdi:apple-keyboard-caps$$
   - A
-  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: G, h: 'Sft+$$mdi:apple-keyboard-command$$'}
+  - S
+  - D
+  - F
+  - G
   - $$mdi:arrow-left-bold$$
   - H
   - J
@@ -40,7 +40,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -63,10 +63,10 @@ layers:
   - $$mdi:keyboard-space$$
   - B
   - '2'
-  - {t: END, h: HOME}
+  - '3'
   - {t: PgDn, h: PG UP}
   '1':
-  - BT CLR ALL
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -95,7 +95,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  - '&mkp MB3'
+  - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
@@ -124,13 +124,79 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - '&mkp MB1'
+  - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   '2':
+  - {t: '`', s: '~'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '`', s: '~'}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-control$$
+  - '&'
+  - '*'
+  - (
+  - )
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '-', s: _}
+  - {t: '=', s: +}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - '{'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '}'
+  - {t: /, s: '?'}
+  - {t: \, s: '|'}
+  - '|'
+  - '~'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  '3':
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -194,44 +260,25 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [0, 13]
-  k: '!'
-  l: [LAYER0]
-- p: [36, 37, 35]
-  k: {t: '$$mdi:keyboard-return$$', type: enter}
-  l: [LAYER0]
-- p: [40, 41]
-  k: '&undo'
-  l: [LAYER0]
-- p: [41, 42]
-  k: '&cut'
-  l: [LAYER0]
-- p: [42, 43]
-  k: '&copy'
-  l: [LAYER0]
-- p: [43, 44]
-  k: '&paste'
-  l: [LAYER0]
 - p: [11, 12]
   k: '&td_shift_equal'
   l: [LAYER0]
 - p: [11, 10]
   k: '&td_shift_dash'
   l: [LAYER0]
-- p: [13, 14]
-  k: '&td_bracket_left'
+- p: [24, 23]
+  k: '{'
   l: [LAYER0]
 - p: [24, 25]
-  k: '&td_bracket_right'
+  k: '}'
   l: [LAYER0]
 - p: [4, 5]
-  k: '&td_refresh'
+  k: '&hard_refresh'
   l: [LAYER0]
 - p: [0, 1]
-  k: '&td_shift_grave'
-  l: [LAYER0]
-- p: [0, 1, 2]
-  k: \
-  l: [LAYER0]
+  k: {t: '`', s: '~'}
+- p: [39, 24, 23]
+  k: {t: '[', s: '{'}
+- p: [39, 25, 24]
+  k: {t: ']', s: '}'}
