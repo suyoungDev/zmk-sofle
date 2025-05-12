@@ -66,7 +66,7 @@ layers:
   - '3'
   - {t: PgDn, h: PG UP}
   '1':
-  - {t: '$$mdi:transfer$$', type: trans}
+  - BT CLR ALL
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
