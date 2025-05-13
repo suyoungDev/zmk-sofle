@@ -40,7 +40,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - {t: '`', s: Ctl+`}
+  - {t: '$$mdi:apple-keyboard-shift$$', s: Ctl+`}
   - Z
   - X
   - C
