@@ -269,8 +269,8 @@
             bindings = <
 &trans     &trans    &trans       &trans        &trans      &trans         &trans  &trans     &trans                &trans        &trans                &trans                 &trans
 &kp GRAVE  &kp N1    &kp N2       &kp N3        &kp N4      &kp N5         &trans  &kp N6     &kp N7                &kp N8        &kp N9                &kp N0                 &trans
-&kp TILDE  &kp EXCL  &kp AT_SIGN  &kp HASH      &kp DOLLAR  &kp PERCENT    &trans  &kp LCTRL  &kp AMPERSAND         &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans     &kp PLUS  &kp MINUS    &kp ASTERISK  &kp SLASH   &kp EQUAL      &trans  &kp SLASH  &kp NON_US_BACKSLASH  &kp PIPE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
+&kp TILDE  &kp EXCL  &kp AT_SIGN  &kp HASH      &kp DOLLAR  &kp PERCENT    &trans  &kp LCTRL  &kp AMPERSAND         &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE
+&trans     &kp PLUS  &kp MINUS    &kp ASTERISK  &kp SLASH   &kp EQUAL      &trans  &kp SLASH  &kp NON_US_BACKSLASH  &kp PIPE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE
 &trans     &trans    &trans       &trans        &trans      &trans         &trans  &trans     &trans                &trans        &trans                &trans
             >;
         };
