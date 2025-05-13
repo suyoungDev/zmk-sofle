@@ -260,11 +260,11 @@
 
         layer0 {
             bindings = <
-&kp ESCAPE                &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2  &mt HASH NUMBER_3  &mt DOLLAR NUMBER_4  &mt PERCENT N5    &kp UP_ARROW     &mt LCTRL NUMBER_6  &mt AMPERSAND N7  &mt LEFT_PARENTHESIS N8  &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0  &kp BACKSPACE
-&kp TAB                   &kp Q                     &kp W                 &kp E              &kp R                &kp T             &kp DOWN_ARROW   &kp Y               &kp U             &kp I                    &kp O                    &kp P                     &mt PIPE BACKSLASH
-&kp CAPS                  &kp A                     &kp S                 &kp D              &kp F                &kp G             &kp LEFT_ARROW   &kp H               &kp J             &kp K                    &kp L                    &kp SEMI                  &kp APOS
-&mt LC(LSHFT) LEFT_SHIFT  &kp Z                     &kp X                 &kp C              &kp V                &kp B             &kp RIGHT_ARROW  &kp N               &kp M             &kp COMMA                &kp DOT                  &mt QUESTION FSLH         &kp RET
-&kp C_MUTE                &OSM LCTRL                &OSM LEFT_ALT         &OSM LEFT_COMMAND  &kp SPACE            &lt 1 SPACE       &kp ENTER        &lt 2 SPACE         &kp B             &mo 2                    &mo 0                    &hmr PG_UP PAGE_DOWN
+&kp ESCAPE      &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2  &mt HASH NUMBER_3  &mt DOLLAR NUMBER_4  &mt PERCENT N5    &kp UP_ARROW     &mt LCTRL NUMBER_6  &mt AMPERSAND N7  &mt LEFT_PARENTHESIS N8  &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0  &kp BACKSPACE
+&kp TAB         &kp Q                     &kp W                 &kp E              &kp R                &kp T             &kp DOWN_ARROW   &kp Y               &kp U             &kp I                    &kp O                    &kp P                     &mt PIPE BACKSLASH
+&kp CAPS        &kp A                     &kp S                 &kp D              &kp F                &kp G             &kp LEFT_ARROW   &kp H               &kp J             &kp K                    &kp L                    &kp SEMI                  &kp APOS
+&open_terminal  &kp Z                     &kp X                 &kp C              &kp V                &kp B             &kp RIGHT_ARROW  &kp N               &kp M             &kp COMMA                &kp DOT                  &mt QUESTION FSLH         &kp RET
+&kp C_MUTE      &OSM LCTRL                &OSM LEFT_ALT         &OSM LEFT_COMMAND  &kp SPACE            &lt 1 SPACE       &kp ENTER        &lt 2 SPACE         &kp B             &mo 2                    &mo 0                    &hmr PG_UP PAGE_DOWN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
