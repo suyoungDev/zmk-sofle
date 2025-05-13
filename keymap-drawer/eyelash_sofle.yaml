@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
   LAYER0:
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:keyboard-esc$$', h: '`'}
   - {t: '1', h: '!'}
   - {t: '2', h: '@'}
   - {t: '3', h: '#'}
@@ -144,7 +144,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '~'
+  - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -157,7 +157,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '`', s: '~'}
+  - '~'
   - '!'
   - '@'
   - '#'
@@ -210,13 +210,4 @@ combos:
   l: [LAYER0]
 - p: [4, 5]
   k: '&hard_refresh'
-  l: [LAYER0]
-- p: [0, 1]
-  k: {t: '`', s: '~'}
-  l: [LAYER0]
-- p: [39, 24, 23]
-  k: {t: '[', s: '{'}
-  l: [LAYER0]
-- p: [39, 25, 24]
-  k: {t: ']', s: '}'}
   l: [LAYER0]
