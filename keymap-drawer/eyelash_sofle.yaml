@@ -164,7 +164,7 @@ layers:
   - $
   - '%'
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-control$$
+  - ^
   - '&'
   - '*'
   - (
