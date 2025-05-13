@@ -10,7 +10,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - {t: '6', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '7', h: '&', s: '&'}
-  - {t: '8', h: (, s: '*'}
+  - {t: '8', h: '*', s: '*'}
   - {t: '9', h: (, s: (}
   - {t: '0', h: ), s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
