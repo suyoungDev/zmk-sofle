@@ -180,10 +180,19 @@
         flavor = "tap-preferred";
     };
 
-    open_terminal: open_terminal {
+    ide_open_terminal: ide_open_terminal {
         compatible = "zmk,behavior-mod-morph";
-        label = "OPEN_TERMINAL";
+        label = "IDE_OPEN_TERMINAL";
         bindings = <&kp ESCAPE>, <&kp LC(GRAVE)>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    ide_open_references: ide_open_references {
+        compatible = "zmk,behavior-mod-morph";
+        label = "IDE_OPEN_REFERENCES";
+        bindings = <&kp F12>, <&kp LA(LS(F12))>;
 
         #binding-cells = <0>;
         mods = <(MOD_LSFT)>;
@@ -242,11 +251,11 @@
 
         layer0 {
             bindings = <
-&open_terminal  &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2  &mt HASH NUMBER_3  &mt DOLLAR NUMBER_4  &mt PERCENT N5    &kp UP_ARROW     &mt LCTRL NUMBER_6  &mt AMPERSAND N7  &mt ASTERISK N8  &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0  &kp BACKSPACE
-&kp TAB         &kp Q                     &kp W                 &kp E              &kp R                &kp T             &kp DOWN_ARROW   &kp Y               &kp U             &kp I            &kp O                    &kp P                     &mt PIPE BACKSLASH
-&kp CAPS        &kp A                     &kp S                 &kp D              &kp F                &kp G             &kp LEFT_ARROW   &kp H               &kp J             &kp K            &kp L                    &kp SEMI                  &kp APOS
-&kp LEFT_SHIFT  &kp Z                     &kp X                 &kp C              &kp V                &kp B             &kp RIGHT_ARROW  &kp N               &kp M             &kp COMMA        &kp DOT                  &mt QUESTION FSLH         &kp RET
-&kp C_MUTE      &kp LCTRL                 &kp LEFT_ALT          &kp LEFT_COMMAND   &lt 1 SPACE          &lt 2 SPACE       &kp ENTER        &lt 2 SPACE         &kp B             &mo 1            &mo 2                    &mt PG_UP PAGE_DOWN
+&ide_open_terminal  &mt EXCLAMATION NUMBER_1  &mt AT_SIGN NUMBER_2  &mt HASH NUMBER_3  &mt DOLLAR NUMBER_4  &mt PERCENT N5    &kp UP_ARROW     &mt LCTRL NUMBER_6  &mt AMPERSAND N7  &mt ASTERISK N8  &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0  &kp BACKSPACE
+&kp TAB             &kp Q                     &kp W                 &kp E              &kp R                &kp T             &kp DOWN_ARROW   &kp Y               &kp U             &kp I            &kp O                    &kp P                     &mt PIPE BACKSLASH
+&kp CAPS            &kp A                     &kp S                 &kp D              &kp F                &kp G             &kp LEFT_ARROW   &kp H               &kp J             &kp K            &kp L                    &kp SEMI                  &kp APOS
+&kp LEFT_SHIFT      &kp Z                     &kp X                 &kp C              &kp V                &kp B             &kp RIGHT_ARROW  &kp N               &kp M             &kp COMMA        &kp DOT                  &mt QUESTION FSLH         &kp RET
+&kp C_MUTE          &kp LCTRL                 &kp LEFT_ALT          &kp LEFT_COMMAND   &lt 1 SPACE          &lt 2 SPACE       &kp ENTER        &lt 2 SPACE         &kp B             &mo 1            &mo 2                    &mt PG_UP PAGE_DOWN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -255,11 +264,11 @@
 
         layer_1 {
             bindings = <
-&bt BT_CLR_ALL  &trans          &kp UP_ARROW    &trans           &trans     &trans            &mmv MOVE_UP     &trans  &kp F10  &kp F11  &kp F12  &trans  &trans
-&trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans     &msc SCRL_UP      &mmv MOVE_DOWN   &trans  &kp F7   &kp F8   &kp F9   &trans  &trans
-&trans          &trans          &mkp LCLK       &mkp MCLK        &mkp RCLK  &msc SCRL_DOWN    &mmv MOVE_LEFT   &trans  &kp F4   &kp F5   &kp F6   &trans  &trans
-&trans          &trans          &trans          &trans           &trans     &trans            &mmv MOVE_RIGHT  &trans  &kp F1   &kp F2   &kp F3   &trans  &trans
-&trans          &kp LC(LS(G))   &trans          &trans           &trans     &trans            &mkp LCLK        &trans  &trans   &trans   &trans   &trans
+&bt BT_CLR_ALL  &trans          &kp UP_ARROW    &trans           &trans     &trans            &mmv MOVE_UP     &trans  &kp F10  &kp F11  &ide_open_references  &trans  &trans
+&trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans     &msc SCRL_UP      &mmv MOVE_DOWN   &trans  &kp F7   &kp F8   &kp F9                &trans  &trans
+&trans          &trans          &mkp LCLK       &mkp MCLK        &mkp RCLK  &msc SCRL_DOWN    &mmv MOVE_LEFT   &trans  &kp F4   &kp F5   &kp F6                &trans  &trans
+&trans          &trans          &trans          &trans           &trans     &trans            &mmv MOVE_RIGHT  &trans  &kp F1   &kp F2   &kp F3                &trans  &trans
+&trans          &kp LC(LS(G))   &trans          &trans           &trans     &trans            &mkp LCLK        &trans  &trans   &trans   &trans                &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -267,11 +276,11 @@
 
         layer_2 {
             bindings = <
-&trans     &trans         &trans       &trans        &trans      &trans         &trans  &trans     &trans         &trans        &trans                &trans                 &trans
-&kp GRAVE  &kp N1         &kp N2       &kp N3        &kp N4      &kp N5         &trans  &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &kp UNDER
-&kp TILDE  &kp EXCL       &kp AT_SIGN  &kp HASH      &kp DOLLAR  &kp PERCENT    &trans  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE
-&trans     &kp PLUS       &kp MINUS    &kp ASTERISK  &kp SLASH   &kp EQUAL      &trans  &kp SLASH  &kp BACKSLASH  &kp PIPE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE
-&trans     &kp LS(LC(G))  &trans       &trans        &trans      &trans         &trans  &trans     &trans         &trans        &trans                &trans
+&trans     &trans         &trans           &trans        &trans      &trans         &trans  &trans     &trans         &trans        &trans                &trans                 &trans
+&kp GRAVE  &kp N1         &kp N2           &kp N3        &kp N4      &kp N5         &trans  &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &kp UNDER
+&kp TILDE  &kp EXCL       &kp AT_SIGN      &kp HASH      &kp DOLLAR  &kp PERCENT    &trans  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE
+&trans     &kp PLUS       &mt UNDER MINUS  &kp ASTERISK  &kp SLASH   &kp EQUAL      &trans  &kp SLASH  &kp BACKSLASH  &kp PIPE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE
+&trans     &kp LS(LC(G))  &trans           &trans        &trans      &trans         &trans  &trans     &trans         &trans        &trans                &trans
             >;
         };
     };
