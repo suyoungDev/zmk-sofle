@@ -213,14 +213,14 @@
             layers = <0>;
         };
 
-        bracket_left {
+        curly_bracket_left {
             bindings = <&kp LBRC>;
             key-positions = <24 23>;
             layers = <0>;
             timeout-ms = <150>;
         };
 
-        bracket_right {
+        curly_bracket_right {
             bindings = <&kp RBRC>;
             key-positions = <24 25>;
             layers = <0>;
@@ -236,6 +236,16 @@
         backtick {
             bindings = <&kp GRAVE>;
             key-positions = <1 2>;
+        };
+
+        bracket_left {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <36 37>;
+        };
+
+        bracket_right {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <37 38>;
         };
     };
 
