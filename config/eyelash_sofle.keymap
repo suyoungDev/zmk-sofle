@@ -232,6 +232,11 @@
             key-positions = <4 5>;
             layers = <0>;
         };
+
+        backtick {
+            bindings = <&kp GRAVE>;
+            key-positions = <1 2>;
+        };
     };
 
     behaviors {
