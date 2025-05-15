@@ -235,7 +235,7 @@
 
         backtick {
             bindings = <&kp GRAVE>;
-            key-positions = <1 2>;
+            key-positions = <1 0>;
         };
 
         bracket_left {
