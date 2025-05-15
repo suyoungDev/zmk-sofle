@@ -211,3 +211,5 @@ combos:
 - p: [4, 5]
   k: '&hard_refresh'
   l: [LAYER0]
+- p: [1, 2]
+  k: {t: '`', s: '~'}
