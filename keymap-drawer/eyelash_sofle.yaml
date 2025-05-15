@@ -18,7 +18,7 @@ layers:
   - Q
   - W
   - E
-  - R
+  - {t: R, s: Sft+Ctl+R}
   - T
   - $$mdi:arrow-down-bold$$
   - Y
