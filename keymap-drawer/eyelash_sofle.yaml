@@ -8,7 +8,7 @@ layers:
   - {t: '4', h: $}
   - {t: '5', h: '%', s: '%'}
   - $$mdi:arrow-up-bold$$
-  - {t: '6', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '6', h: ^}
   - {t: '7', h: '&', s: '&'}
   - {t: '8', h: '*', s: '*'}
   - {t: '9', h: (, s: (}
