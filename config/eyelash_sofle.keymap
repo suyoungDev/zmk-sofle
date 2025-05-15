@@ -298,5 +298,15 @@
 &trans     &kp LS(LC(G))  &trans           &trans        &trans      &trans         &trans  &trans     &trans         &trans        &trans                &trans
             >;
         };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans        &trans          &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans        &trans          &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans        &trans          &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans        &trans          &trans
+            >;
+        };
     };
 };
