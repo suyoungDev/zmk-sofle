@@ -246,7 +246,7 @@
             bindings = <
 &bt BT_CLR_ALL  &trans  &trans     &trans     &trans     &trans            &mmv MOVE_UP     &trans            &trans          &trans        &trans                &trans  &trans
 &trans          &trans  &trans     &trans     &trans     &msc SCRL_UP      &mmv MOVE_DOWN   &trans            &trans          &kp F2        &ide_open_references  &trans  &trans
-&trans          &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &msc SCRL_DOWN    &mmv MOVE_LEFT   &ide_delete_word  &kp DOWN_ARROW  &kp UP_ARROW  &kp DOWN_ARROW        &trans  &trans
+&trans          &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &msc SCRL_DOWN    &mmv MOVE_LEFT   &ide_delete_word  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW       &trans  &trans
 &trans          &trans  &trans     &trans     &trans     &trans            &mmv MOVE_RIGHT  &trans            &trans          &trans        &trans                &trans  &trans
 &trans          &trans  &trans     &trans     &trans     &trans            &mkp LCLK        &trans            &trans          &trans        &trans                &trans
             >;
