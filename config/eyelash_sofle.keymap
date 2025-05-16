@@ -59,27 +59,6 @@
         flavor = "tap-preferred";
     };
 
-    td_shift_dash: td_shift_dash {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TD_SHIFT_DASH";
-        #binding-cells = <0>;
-        bindings = <&kp MINUS>, <&kp UNDERSCORE>;
-    };
-
-    td_shift_equal: td_shift_equal {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TD_SHIFT_EQUAL";
-        #binding-cells = <0>;
-        bindings = <&kp EQUAL>, <&kp PLUS>;
-    };
-
-    td_shift_grave: td_shift_grave {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TD_SHIFT_GRAVE";
-        #binding-cells = <0>;
-        bindings = <&kp GRAVE>, <&kp TILDE>;
-    };
-
     OSM: OSM {
         compatible = "zmk,behavior-sticky-key";
         label = "OSM";
@@ -87,13 +66,6 @@
         #binding-cells = <1>;
         release-after-ms = <200>;
         quick-release;
-    };
-
-    td_pipe: td_pipe {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TD_PIPE";
-        #binding-cells = <0>;
-        bindings = <&kp BACKSLASH>, <&kp PIPE>;
     };
 
     tdh: tdh {
@@ -142,13 +114,6 @@
 
         #binding-cells = <0>;
         mods = <(MOD_LGUI)>;
-    };
-
-    new_behavior: new_behavior {
-        compatible = "zmk,behavior-tap-dance";
-        label = "NEW_BEHAVIOR";
-        #binding-cells = <0>;
-        bindings = <&kp GRAVE>, <&kp TILDE>;
     };
 
     combos {
