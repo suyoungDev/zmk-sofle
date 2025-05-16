@@ -99,7 +99,7 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:pan-down$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:arrow-left-bold$$', s: 'Alt+$$mdi:backspace$$'}
+  - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
