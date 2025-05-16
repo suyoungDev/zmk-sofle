@@ -228,10 +228,10 @@
     tdm_1: tdm_1 {
         compatible = "zmk,behavior-mod-morph";
         label = "TDM_1";
-        bindings = <&tdh EXCLAMATION NUMBER_1>, <&kp GRAVE>;
+        bindings = <&tdh EXCLAMATION NUMBER_1>, <&td_shift_grave>;
 
         #binding-cells = <0>;
-        mods = <(MOD_RGUI)>;
+        mods = <(MOD_LGUI)>;
     };
 
     combos {
