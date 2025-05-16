@@ -160,7 +160,7 @@
             layers = <0>;
         };
 
-        td_minus {
+        mt_minus {
             bindings = <&mt UNDERSCORE MINUS>;
             key-positions = <11 10>;
             layers = <0>;
