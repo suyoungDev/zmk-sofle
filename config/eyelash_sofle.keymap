@@ -246,9 +246,9 @@
         layer_2 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans                 &trans    &trans           &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans                 &trans    &trans           &kp PLUS   &kp UNDER
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT_PARENTHESIS   &kp LBKT  &kp LEFT_BRACE   &kp UNDER  &kp LEFT_BRACE
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp RIGHT_PARENTHESIS  &kp RBKT  &kp RIGHT_BRACE  &kp MINUS  &kp RIGHT_BRACE
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans                 &trans    &trans           &kp PLUS   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT_PARENTHESIS   &kp LBKT  &kp LEFT_BRACE   &kp UNDER  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp RIGHT_PARENTHESIS  &kp RBKT  &kp RIGHT_BRACE  &kp MINUS  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans                 &trans    &trans           &trans
             >;
         };
