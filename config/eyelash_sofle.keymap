@@ -144,6 +144,13 @@
         mods = <(MOD_LGUI)>;
     };
 
+    new_behavior: new_behavior {
+        compatible = "zmk,behavior-tap-dance";
+        label = "NEW_BEHAVIOR";
+        #binding-cells = <0>;
+        bindings = <&kp GRAVE>, <&kp TILDE>;
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -223,11 +230,11 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans                 &trans    &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp PLUS   &trans                 &trans    &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp MINUS  &kp LEFT_PARENTHESIS   &kp LBKT  &kp LEFT_BRACE   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp UNDER  &kp RIGHT_PARENTHESIS  &kp RBKT  &kp RIGHT_BRACE  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans                 &trans    &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans                 &trans     &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp PLUS   &kp GRAVE              &kp TILDE  &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp MINUS  &kp LEFT_PARENTHESIS   &kp LBKT   &kp LEFT_BRACE   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp UNDER  &kp RIGHT_PARENTHESIS  &kp RBKT   &kp RIGHT_BRACE  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans                 &trans     &trans           &trans
             >;
         };
 
