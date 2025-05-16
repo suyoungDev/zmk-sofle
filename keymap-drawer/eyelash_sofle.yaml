@@ -184,7 +184,7 @@ layers:
   - {t: ']', s: '}'}
   - '}'
   - {t: '$$mdi:transfer$$', type: trans}
-  - Sft+Ctl+G
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
