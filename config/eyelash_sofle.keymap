@@ -196,7 +196,7 @@
         layer_2 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans                 &trans     &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp PLUS   &kp GRAVE              &kp TILDE  &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp EQUAL  &kp GRAVE              &kp TILDE  &trans           &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp MINUS  &kp LEFT_PARENTHESIS   &kp LBKT   &kp LEFT_BRACE   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp UNDER  &kp RIGHT_PARENTHESIS  &kp RBKT   &kp RIGHT_BRACE  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans                 &trans     &trans           &trans
