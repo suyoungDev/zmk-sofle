@@ -132,7 +132,7 @@
         bindings = <&kp R>, <&kp LS(LC(R))>;
 
         #binding-cells = <0>;
-        mods = <(MOD_LGUI)>;
+        mods = <(MOD_RGUI)>;
     };
 
     ide_source_control: ide_source_control {
