@@ -59,78 +59,6 @@
         flavor = "tap-preferred";
     };
 
-    tdh_1: tdh_1 {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TDH_1";
-        #binding-cells = <0>;
-        bindings = <&kp NUMBER_1>, <&tdh F1 EXCL>;
-
-        tapping-term-ms = <200>;
-    };
-
-    tdh_2: tdh_2 {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TDH_2";
-        #binding-cells = <0>;
-        bindings = <&kp NUMBER_2>, <&tdh F2 AT_SIGN>;
-    };
-
-    tdh_3: tdh_3 {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TDH_3";
-        #binding-cells = <0>;
-        bindings = <&kp NUMBER_3>, <&tdh F3 HASH>;
-    };
-
-    tdh_4: tdh_4 {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TDH_4";
-        #binding-cells = <0>;
-        bindings = <&kp NUMBER_4>, <&tdh F4 DOLLAR>;
-    };
-
-    tdh_5: tdh_5 {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TDH_5";
-        #binding-cells = <0>;
-        bindings = <&kp N5>, <&tdh F5 CARET>;
-    };
-
-    tdh_6: tdh_6 {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TDH_6";
-        #binding-cells = <0>;
-        bindings = <&kp NUMBER_6>, <&tdh F6 CARET>;
-    };
-
-    tdh_7: tdh_7 {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TDH_7";
-        #binding-cells = <0>;
-        bindings = <&kp N7>, <&tdh F7 AMPERSAND>;
-    };
-
-    tdh_8: tdh_8 {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TDH_8";
-        #binding-cells = <0>;
-        bindings = <&kp N8>, <&tdh F8 ASTERISK>;
-    };
-
-    tdh_9: tdh_9 {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TDH_9";
-        #binding-cells = <0>;
-        bindings = <&kp N9>, <&tdh F9 LEFT_PARENTHESIS>;
-    };
-
-    tdh_0: tdh_0 {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TDH_0";
-        #binding-cells = <0>;
-        bindings = <&kp N0>, <&tdh F10 RIGHT_PARENTHESIS>;
-    };
-
     td_shift_dash: td_shift_dash {
         compatible = "zmk,behavior-tap-dance";
         label = "TD_SHIFT_DASH";
@@ -225,9 +153,9 @@
         mods = <(MOD_RGUI)>;
     };
 
-    tdm_1: tdm_1 {
+    tdm_1_backtick: tdm_1_backtick {
         compatible = "zmk,behavior-mod-morph";
-        label = "TDM_1";
+        label = "TDM_1_BACKTICK";
         bindings = <&tdh EXCLAMATION NUMBER_1>, <&td_shift_grave>;
 
         #binding-cells = <0>;
@@ -312,11 +240,11 @@
 
         layer0 {
             bindings = <
-&ide_open_terminal  &tdm_1     &mt AT_SIGN NUMBER_2  &mt HASH NUMBER_3  &mt DOLLAR NUMBER_4  &mt PERCENT N5         &kp UP_ARROW     &mt CARET NUMBER_6  &mt AMPERSAND N7  &mt ASTERISK N8      &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0  &kp BACKSPACE
-&kp TAB             &kp Q      &kp W                 &kp E              &ide_refactor        &kp T                  &kp DOWN_ARROW   &kp Y               &kp U             &kp I                &kp O                    &kp P                     &mt PIPE BACKSLASH
-&kp CAPS            &kp A      &kp S                 &kp D              &kp F                &ide_source_control    &kp LEFT_ARROW   &kp H               &kp J             &kp K                &kp L                    &mt COLON SEMI            &mt DOUBLE_QUOTES SINGLE_QUOTE
-&kp LEFT_SHIFT      &kp Z      &kp X                 &kp C              &kp V                &kp B                  &kp RIGHT_ARROW  &kp N               &kp M             &mt LESS_THAN COMMA  &mt GREATER_THAN DOT     &mt QUESTION FSLH         &kp RET
-&kp C_MUTE          &kp LCTRL  &kp LEFT_ALT          &kp LEFT_COMMAND   &lt 1 SPACE          &lt 2 SPACE            &kp ENTER        &lt 3 SPACE         &kp B             &kp RIGHT_GUI        &kp RIGHT_ALT            &mt PG_UP PAGE_DOWN
+&ide_open_terminal  &tdm_1_backtick  &mt AT_SIGN NUMBER_2  &mt HASH NUMBER_3  &mt DOLLAR NUMBER_4  &mt PERCENT N5         &kp UP_ARROW     &mt CARET NUMBER_6  &mt AMPERSAND N7  &mt ASTERISK N8      &mt LEFT_PARENTHESIS N9  &mt RIGHT_PARENTHESIS N0  &kp BACKSPACE
+&kp TAB             &kp Q            &kp W                 &kp E              &ide_refactor        &kp T                  &kp DOWN_ARROW   &kp Y               &kp U             &kp I                &kp O                    &kp P                     &mt PIPE BACKSLASH
+&kp CAPS            &kp A            &kp S                 &kp D              &kp F                &ide_source_control    &kp LEFT_ARROW   &kp H               &kp J             &kp K                &kp L                    &mt COLON SEMI            &mt DOUBLE_QUOTES SINGLE_QUOTE
+&kp LEFT_SHIFT      &kp Z            &kp X                 &kp C              &kp V                &kp B                  &kp RIGHT_ARROW  &kp N               &kp M             &mt LESS_THAN COMMA  &mt GREATER_THAN DOT     &mt QUESTION FSLH         &kp RET
+&kp C_MUTE          &kp LCTRL        &kp LEFT_ALT          &kp LEFT_COMMAND   &lt 1 SPACE          &lt 2 SPACE            &kp ENTER        &lt 3 SPACE         &kp B             &kp RIGHT_GUI        &kp RIGHT_ALT            &mt PG_UP PAGE_DOWN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -325,11 +253,11 @@
 
         layer_1 {
             bindings = <
-&bt BT_CLR_ALL  &trans  &trans     &trans     &trans     &trans            &mmv MOVE_UP     &trans            &trans          &kp F2        &ide_open_references  &trans  &trans
-&trans          &trans  &trans     &trans     &trans     &msc SCRL_UP      &mmv MOVE_DOWN   &trans            &trans          &trans        &trans                &trans  &trans
-&trans          &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &msc SCRL_DOWN    &mmv MOVE_LEFT   &ide_delete_word  &kp DOWN_ARROW  &kp UP_ARROW  &kp DOWN_ARROW        &trans  &trans
-&trans          &trans  &trans     &trans     &trans     &trans            &mmv MOVE_RIGHT  &trans            &trans          &trans        &trans                &trans  &trans
-&trans          &trans  &trans     &trans     &trans     &trans            &mkp LCLK        &trans            &trans          &trans        &trans                &trans
+&bt BT_CLR_ALL  &trans  &trans     &trans     &trans     &trans            &mmv MOVE_UP     &trans            &trans          &trans        &trans              &trans  &trans
+&trans          &trans  &trans     &trans     &trans     &msc SCRL_UP      &mmv MOVE_DOWN   &trans            &trans          &kp F2        &ide_open_terminal  &trans  &trans
+&trans          &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &msc SCRL_DOWN    &mmv MOVE_LEFT   &ide_delete_word  &kp DOWN_ARROW  &kp UP_ARROW  &kp DOWN_ARROW      &trans  &trans
+&trans          &trans  &trans     &trans     &trans     &trans            &mmv MOVE_RIGHT  &trans            &trans          &trans        &trans              &trans  &trans
+&trans          &trans  &trans     &trans     &trans     &trans            &mkp LCLK        &trans            &trans          &trans        &trans              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp F2 F1>;
