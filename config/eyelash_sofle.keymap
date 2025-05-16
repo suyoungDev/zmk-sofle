@@ -245,11 +245,11 @@
 
         layer_2 {
             bindings = <
-&trans     &trans    &trans           &trans        &trans      &trans         &trans  &trans     &trans         &trans        &trans                &trans                 &trans
-&kp GRAVE  &kp N1    &kp N2           &kp N3        &kp N4      &kp N5         &trans  &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &kp UNDER
-&kp TILDE  &kp EXCL  &kp AT_SIGN      &kp HASH      &kp DOLLAR  &kp PERCENT    &trans  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE
-&trans     &kp PLUS  &mt UNDER MINUS  &kp ASTERISK  &kp SLASH   &kp EQUAL      &trans  &kp SLASH  &kp BACKSLASH  &kp PIPE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE
-&trans     &trans    &trans           &trans        &trans      &trans         &trans  &trans     &trans         &trans        &trans                &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans                 &trans    &trans           &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans                 &trans    &trans           &kp PLUS   &kp UNDER
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT_PARENTHESIS   &kp LBKT  &kp LEFT_BRACE   &kp UNDER  &kp LEFT_BRACE
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp RIGHT_PARENTHESIS  &kp RBKT  &kp RIGHT_BRACE  &kp MINUS  &kp RIGHT_BRACE
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans                 &trans    &trans           &trans
             >;
         };
 
