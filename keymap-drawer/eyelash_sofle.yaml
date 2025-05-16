@@ -152,8 +152,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - +
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '`', s: '~'}
+  - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -272,9 +272,6 @@ combos:
   l: [LAYER0]
 - p: [24, 25]
   k: '}'
-  l: [LAYER0]
-- p: [4, 5]
-  k: '&hard_refresh'
   l: [LAYER0]
 - p: [1, 0]
   k: {t: '`', s: '~'}
