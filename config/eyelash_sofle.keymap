@@ -154,14 +154,14 @@
     combos {
         compatible = "zmk,combos";
 
-        td_equal {
-            bindings = <&td_shift_equal>;
+        mt_equal {
+            bindings = <&mt PLUS EQUAL>;
             key-positions = <11 12>;
             layers = <0>;
         };
 
         td_minus {
-            bindings = <&td_shift_dash>;
+            bindings = <&mt UNDERSCORE MINUS>;
             key-positions = <11 10>;
             layers = <0>;
         };
