@@ -262,10 +262,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [11, 12]
-  k: '&td_shift_equal'
+  k: {t: '=', h: +, s: +}
   l: [LAYER0]
 - p: [11, 10]
-  k: '&td_shift_dash'
+  k: {t: '-', h: _, s: _}
   l: [LAYER0]
 - p: [24, 23]
   k: '{'
