@@ -2,7 +2,7 @@ layout: {zmk_keyboard: eyelash_sofle}
 layers:
   LAYER0:
   - {t: '$$mdi:keyboard-esc$$', s: Ctl+`}
-  - {t: '1', h: '!'}
+  - {t: '1', h: '!', s: '`'}
   - {t: '2', h: '@'}
   - {t: '3', h: '#'}
   - {t: '4', h: $}
@@ -32,14 +32,14 @@ layers:
   - S
   - D
   - F
-  - G
+  - {t: G, s: Sft+Ctl+G}
   - $$mdi:arrow-left-bold$$
   - H
   - J
   - K
   - L
   - {t: ;, h: ':', s: ':'}
-  - {t: '''', s: '"'}
+  - {t: '''', h: '"', s: '"'}
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
@@ -49,8 +49,8 @@ layers:
   - $$mdi:arrow-right-bold$$
   - N
   - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
+  - {t: ',', h: <, s: <}
+  - {t: ., h: '>', s: '>'}
   - {t: /, h: '?', s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:volume-off$$
@@ -74,35 +74,22 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - F10
-  - F11
+  - {t: '$$mdi:transfer$$', type: trans}
+  - F2
   - {t: F12, s: Alt+Sft+F12}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:pan-up$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - F7
-  - F8
-  - F9
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
-  - $$mdi:pan-up$$
-  - $$mdi:pan-down$$
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - F4
-  - F5
-  - F6
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -110,16 +97,29 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
+  - $$mdi:pan-down$$
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:arrow-left-bold$$', s: 'Alt+$$mdi:backspace$$'}
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-down-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - F1
-  - F2
-  - F3
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+Sft+G
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
@@ -278,7 +278,10 @@ combos:
   l: [LAYER0]
 - p: [1, 0]
   k: {t: '`', s: '~'}
+  l: [LAYER0]
 - p: [36, 37]
   k: {t: '[', s: '{'}
+  l: [LAYER0]
 - p: [37, 38]
   k: {t: ']', s: '}'}
+  l: [LAYER0]
