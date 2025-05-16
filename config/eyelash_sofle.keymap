@@ -173,12 +173,6 @@
             timeout-ms = <150>;
         };
 
-        refresh {
-            bindings = <&hard_refresh>;
-            key-positions = <4 5>;
-            layers = <0>;
-        };
-
         backtick {
             bindings = <&kp GRAVE>;
             key-positions = <1 0>;
@@ -199,22 +193,6 @@
     };
 
     behaviors {
-    };
-
-    macros {
-        hard_refresh: hard_refresh {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LG(R))>;
-            label = "HARD_REFRESH";
-        };
-
-        delete_word: ide_delete_char {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(BACKSPACE)>;
-            label = "IDE_DELETE_CHAR";
-        };
     };
 
     keymap {
