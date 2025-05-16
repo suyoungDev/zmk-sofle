@@ -132,7 +132,7 @@
         bindings = <&kp R>, <&kp LS(LC(R))>;
 
         #binding-cells = <0>;
-        mods = <(MOD_LSFT)>;
+        mods = <(MOD_RGUI)>;
     };
 
     ide_delete_word: ide_delete_word {
