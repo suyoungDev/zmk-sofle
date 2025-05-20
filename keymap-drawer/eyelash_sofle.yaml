@@ -67,7 +67,7 @@ layers:
   - {t: PgDn, h: PG UP}
   '1':
   - BT CLR ALL
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&voice_over'
   - F2
   - {t: F12, s: Alt+Sft+F12}
   - {t: '$$mdi:transfer$$', type: trans}
