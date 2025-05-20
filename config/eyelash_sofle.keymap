@@ -159,7 +159,7 @@
 
         layer_1 {
             bindings = <
-&bt BT_CLR_ALL  &trans  &kp F2     &ide_open_references  &trans         &trans            &mmv MOVE_UP     &trans          &trans          &trans        &trans                &trans  &kp EQUAL
+&bt BT_CLR_ALL  &trans  &kp F2     &ide_open_references  &trans         &trans            &mmv MOVE_UP     &trans          &trans          &trans        &trans                &trans  &kp PLUS
 &trans          &trans  &trans     &trans                &ide_refactor  &msc SCRL_UP      &mmv MOVE_DOWN   &trans          &trans          &kp F2        &ide_open_references  &trans  &trans
 &trans          &trans  &mkp LCLK  &mkp MCLK             &mkp RCLK      &msc SCRL_DOWN    &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW       &trans  &trans
 &trans          &trans  &trans     &trans                &trans         &trans            &mmv MOVE_RIGHT  &trans          &trans          &trans        &trans                &trans  &trans
@@ -169,11 +169,11 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans     &trans            &trans  &trans     &trans                 &trans           &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans            &trans  &kp GRAVE  &kp TILDE              &trans           &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &kp GRAVE  &kp UNDERSCORE    &trans  &kp MINUS  &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET   &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans            &trans  &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans            &trans  &trans     &trans                 &trans           &trans             &trans
+&trans  &trans  &trans  &trans  &trans     &trans            &trans  &trans     &trans           &trans             &trans  &kp EQUAL  &kp PLUS
+&trans  &trans  &trans  &trans  &trans     &trans            &trans  &kp GRAVE  &kp TILDE        &trans             &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &kp GRAVE  &kp UNDERSCORE    &trans  &kp MINUS  &kp LEFT_BRACE   &kp LEFT_BRACKET   &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans     &trans            &trans  &kp EQUAL  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans     &trans            &trans  &trans     &trans           &trans             &trans  &trans
             >;
         };
     };
