@@ -63,7 +63,7 @@ layers:
   - {t: '1', h: toggle}
   - B
   - RIGHT GUI
-  - $$mdi:apple-keyboard-option$$
+  - Alt+$$mdi:keyboard-space$$
   - {t: PgDn, h: PG UP}
   '1':
   - BT CLR ALL
