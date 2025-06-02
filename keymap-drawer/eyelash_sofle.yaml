@@ -66,7 +66,7 @@ layers:
   - Alt+$$mdi:keyboard-space$$
   - {t: PgDn, h: PG UP}
   '1':
-  - BT CLR ALL
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&voice_over'
   - F2
   - {t: F12, s: Alt+Sft+F12}
@@ -78,7 +78,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - BT CLR ALL
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
