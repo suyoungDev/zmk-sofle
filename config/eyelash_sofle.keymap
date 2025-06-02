@@ -180,11 +180,11 @@
 
         layer_1 {
             bindings = <
-&bt BT_CLR_ALL  &voice_over  &kp F2     &ide_open_references  &trans         &trans            &mmv MOVE_UP     &trans          &trans          &trans        &trans           &trans  &trans
-&trans          &trans       &trans     &trans                &ide_refactor  &msc SCRL_UP      &mmv MOVE_DOWN   &trans          &trans          &trans        &trans           &trans  &trans
-&trans          &trans       &mkp LCLK  &mkp MCLK             &mkp RCLK      &msc SCRL_DOWN    &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &kp ENTER
-&trans          &trans       &trans     &ide_kill_node        &trans         &trans            &mmv MOVE_RIGHT  &trans          &trans          &trans        &trans           &trans  &trans
-&trans          &trans       &trans     &trans                &trans         &trans            &mkp LCLK        &trans          &trans          &trans        &trans           &trans
+&trans  &voice_over  &kp F2     &ide_open_references  &trans         &trans            &mmv MOVE_UP     &trans          &trans          &trans        &trans           &trans  &bt BT_CLR_ALL
+&trans  &trans       &trans     &trans                &ide_refactor  &msc SCRL_UP      &mmv MOVE_DOWN   &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &trans       &mkp LCLK  &mkp MCLK             &mkp RCLK      &msc SCRL_DOWN    &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &kp ENTER
+&trans  &trans       &trans     &ide_kill_node        &trans         &trans            &mmv MOVE_RIGHT  &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &trans       &trans     &trans                &trans         &trans            &mkp LCLK        &trans          &trans          &trans        &trans           &trans
             >;
         };
 
