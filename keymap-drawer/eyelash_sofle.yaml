@@ -47,7 +47,7 @@ layers:
   - V
   - B
   - $$mdi:arrow-right-bold$$
-  - N
+  - '&td_n_b_left_hand'
   - M
   - {t: ',', h: <, s: <}
   - {t: ., h: '>', s: '>'}
