@@ -189,11 +189,11 @@
 
         layer_2 {
             bindings = <
-&mt TILDE GRAVE  &trans  &trans  &trans  &trans     &trans            &trans  &trans     &trans           &trans             &trans  &mt UNDER MINUS              &mt PLUS EQUAL
-&trans           &trans  &trans  &trans  &trans     &trans            &trans  &kp GRAVE  &kp TILDE        &trans             &trans  &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET
-&trans           &trans  &trans  &trans  &kp GRAVE  &kp UNDERSCORE    &trans  &kp MINUS  &kp LEFT_BRACE   &kp LEFT_BRACKET   &trans  &trans                       &trans
-&trans           &trans  &trans  &trans  &trans     &trans            &trans  &kp EQUAL  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &trans  &trans                       &trans
-&trans           &trans  &trans  &trans  &trans     &trans            &trans  &trans     &trans           &trans             &trans  &trans
+&mt TILDE GRAVE  &trans  &trans  &trans  &trans     &trans            &trans  &trans     &trans     &trans  &trans  &mt UNDER MINUS   &mt PLUS EQUAL
+&trans           &trans  &trans  &trans  &trans     &trans            &trans  &kp GRAVE  &kp TILDE  &trans  &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE
+&trans           &trans  &trans  &trans  &kp GRAVE  &kp UNDERSCORE    &trans  &kp MINUS  &trans     &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans           &trans  &trans  &trans  &trans     &trans            &trans  &kp EQUAL  &trans     &trans  &trans  &trans            &trans
+&trans           &trans  &trans  &trans  &trans     &trans            &trans  &trans     &trans     &trans  &trans  &trans
             >;
         };
     };
