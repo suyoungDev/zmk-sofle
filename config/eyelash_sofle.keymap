@@ -153,6 +153,13 @@
             bindings = <&kp LA(SPACE)>;
             label = "OPEN_RAYCAST";
         };
+
+        open_gpt: open_gpt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LG(SPACE))>;
+            label = "OPEN_GPT";
+        };
     };
 
     keymap {
@@ -164,7 +171,7 @@
 &kp TAB         &kp Q               &kp W                  &kp E               &kp R                 &kp T              &kp DOWN_ARROW   &kp Y                &kp U              &kp I                &kp O                     &kp P                      &mt PIPE BACKSLASH
 &kp CAPS        &kp A               &kp S                  &kp D               &kp F                 &kp G              &kp LEFT_ARROW   &kp H                &kp J              &kp K                &kp L                     &mt COLON SEMI             &kp SINGLE_QUOTE
 &kp LEFT_SHIFT  &kp Z               &kp X                  &kp C               &kp V                 &kp B              &kp RIGHT_ARROW  &kp N                &kp M              &mt LESS_THAN COMMA  &mt GREATER_THAN DOT      &mt QUESTION FSLH          &kp RET
-&kp C_MUTE      &kp LCTRL           &kp LEFT_ALT           &kp LEFT_COMMAND    &lt 1 SPACE           &lt 2 SPACE        &kp ENTER        &tog 1               &kp B              &kp RIGHT_GUI        &open_raycast             &mt PG_UP PAGE_DOWN
+&kp C_MUTE      &kp LCTRL           &kp LEFT_ALT           &kp LEFT_COMMAND    &lt 1 SPACE           &lt 2 SPACE        &kp ENTER        &tog 1               &kp B              &open_gpt            &open_raycast             &mt PG_UP PAGE_DOWN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
