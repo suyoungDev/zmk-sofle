@@ -172,11 +172,11 @@
 
         layer_1 {
             bindings = <
-&kp LC(GRAVE)  &trans  &kp F2     &ide_open_references  &trans         &voice_over            &mmv MOVE_UP     &trans          &trans          &trans          &trans           &trans  &trans
-&trans         &trans  &trans     &trans                &ide_refactor  &trans                 &mmv MOVE_DOWN   &trans          &msc SCRL_UP    &msc SCRL_DOWN  &trans           &trans  &trans
-&trans         &trans  &mkp LCLK  &mkp MCLK             &mkp RCLK      &ide_source_control    &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans  &trans
-&trans         &trans  &trans     &ide_kill_node        &trans         &trans                 &mmv MOVE_RIGHT  &trans          &trans          &trans          &trans           &trans  &trans
-&trans         &trans  &trans     &trans                &trans         &trans                 &mkp LCLK        &trans          &trans          &trans          &trans           &trans
+&trans  &trans         &kp F2     &ide_open_references  &trans         &voice_over            &mmv MOVE_UP     &trans          &trans          &trans          &trans           &trans  &trans
+&trans  &trans         &trans     &trans                &ide_refactor  &trans                 &mmv MOVE_DOWN   &trans          &msc SCRL_UP    &msc SCRL_DOWN  &trans           &trans  &trans
+&trans  &kp LC(GRAVE)  &mkp LCLK  &mkp MCLK             &mkp RCLK      &ide_source_control    &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans         &trans     &ide_kill_node        &trans         &trans                 &mmv MOVE_RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans         &trans     &trans                &trans         &trans                 &mkp LCLK        &trans          &trans          &trans          &trans           &trans
             >;
         };
 
