@@ -79,33 +79,6 @@
         flavor = "tap-preferred";
     };
 
-    ide_open_terminal: ide_open_terminal {
-        compatible = "zmk,behavior-mod-morph";
-        label = "IDE_OPEN_TERMINAL";
-        bindings = <&kp ESCAPE>, <&kp LC(GRAVE)>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT)>;
-    };
-
-    ide_open_references: ide_open_references {
-        compatible = "zmk,behavior-mod-morph";
-        label = "IDE_OPEN_REFERENCES";
-        bindings = <&kp F12>, <&kp LA(LS(F12))>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT)>;
-    };
-
-    ide_source_control: ide_source_control {
-        compatible = "zmk,behavior-mod-morph";
-        label = "IDE_SOURCE_CONTROL";
-        bindings = <&kp G>, <&kp LS(LC(G))>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_LGUI)>;
-    };
-
     combos {
         compatible = "zmk,combos";
 
@@ -152,6 +125,27 @@
             bindings = <&kp LG(F5)>;
             label = "VOICE_OVER";
         };
+
+        ide_source_control: ide_soure {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(G))>;
+            label = "IDE_SOURE";
+        };
+
+        ide_open_terminal: ide_open_terminal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(GRAVE)>;
+            label = "IDE_OPEN_TERMINAL";
+        };
+
+        ide_open_references: ide_open_references {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LG(F12))>;
+            label = "IDE_OPEN_REFERENCES";
+        };
     };
 
     keymap {
@@ -159,11 +153,11 @@
 
         layer0 {
             bindings = <
-&kp ESCAPE      &hml EXCL NUMBER_1  &hml AT_SIGN NUMBER_2  &hml HASH NUMBER_3  &hml DOLLAR NUMBER_4  &hml PERCENT N5        &kp UP_ARROW     &hmr CARET NUMBER_6  &hmr AMPERSAND N7  &hmr ASTERISK N8     &hmr LEFT_PARENTHESIS N9  &hmr RIGHT_PARENTHESIS N0  &kp BACKSPACE
-&kp TAB         &kp Q               &kp W                  &kp E               &kp R                 &kp T                  &kp DOWN_ARROW   &kp Y                &kp U              &kp I                &kp O                     &kp P                      &mt PIPE BACKSLASH
-&kp CAPS        &kp A               &kp S                  &kp D               &kp F                 &ide_source_control    &kp LEFT_ARROW   &kp H                &kp J              &kp K                &kp L                     &mt COLON SEMI             &kp SINGLE_QUOTE
-&kp LEFT_SHIFT  &kp Z               &kp X                  &kp C               &kp V                 &kp B                  &kp RIGHT_ARROW  &kp N                &kp M              &mt LESS_THAN COMMA  &mt GREATER_THAN DOT      &mt QUESTION FSLH          &kp RET
-&kp C_MUTE      &kp LCTRL           &kp LEFT_ALT           &kp LEFT_COMMAND    &lt 1 SPACE           &lt 2 SPACE            &kp ENTER        &tog 1               &kp B              &kp RIGHT_GUI        &kp LA(SPACE)             &mt PG_UP PAGE_DOWN
+&kp ESCAPE      &hml EXCL NUMBER_1  &hml AT_SIGN NUMBER_2  &hml HASH NUMBER_3  &hml DOLLAR NUMBER_4  &hml PERCENT N5    &kp UP_ARROW     &hmr CARET NUMBER_6  &hmr AMPERSAND N7  &hmr ASTERISK N8     &hmr LEFT_PARENTHESIS N9  &hmr RIGHT_PARENTHESIS N0  &kp BACKSPACE
+&kp TAB         &kp Q               &kp W                  &kp E               &kp R                 &kp T              &kp DOWN_ARROW   &kp Y                &kp U              &kp I                &kp O                     &kp P                      &mt PIPE BACKSLASH
+&kp CAPS        &kp A               &kp S                  &kp D               &kp F                 &none              &kp LEFT_ARROW   &kp H                &kp J              &kp K                &kp L                     &mt COLON SEMI             &kp SINGLE_QUOTE
+&kp LEFT_SHIFT  &kp Z               &kp X                  &kp C               &kp V                 &kp B              &kp RIGHT_ARROW  &kp N                &kp M              &mt LESS_THAN COMMA  &mt GREATER_THAN DOT      &mt QUESTION FSLH          &kp RET
+&kp C_MUTE      &kp LCTRL           &kp LEFT_ALT           &kp LEFT_COMMAND    &lt 1 SPACE           &lt 2 SPACE        &kp ENTER        &tog 1               &kp B              &kp RIGHT_GUI        &kp LA(SPACE)             &mt PG_UP PAGE_DOWN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -172,11 +166,11 @@
 
         layer_1 {
             bindings = <
-&trans  &trans         &kp F2     &ide_open_references  &trans         &voice_over            &mmv MOVE_UP     &trans          &trans          &trans          &trans           &trans  &trans
-&trans  &trans         &trans     &trans                &ide_refactor  &trans                 &mmv MOVE_DOWN   &trans          &msc SCRL_UP    &msc SCRL_DOWN  &trans           &trans  &trans
-&trans  &kp LC(GRAVE)  &mkp LCLK  &mkp MCLK             &mkp RCLK      &ide_source_control    &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans         &trans     &ide_kill_node        &trans         &trans                 &mmv MOVE_RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans         &trans     &trans                &trans         &trans                 &mkp LCLK        &trans          &trans          &trans          &trans           &trans
+&trans  &trans         &kp F2     &kp F12         &ide_open_references  &voice_over            &mmv MOVE_UP     &trans          &trans          &trans          &trans           &trans  &trans
+&trans  &trans         &trans     &trans          &ide_refactor         &trans                 &mmv MOVE_DOWN   &trans          &msc SCRL_UP    &msc SCRL_DOWN  &trans           &trans  &trans
+&trans  &kp LC(GRAVE)  &mkp LCLK  &mkp MCLK       &mkp RCLK             &ide_source_control    &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans         &trans     &ide_kill_node  &trans                &trans                 &mmv MOVE_RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans         &trans     &trans          &trans                &trans                 &mkp LCLK        &trans          &trans          &trans          &trans           &trans
             >;
         };
 
