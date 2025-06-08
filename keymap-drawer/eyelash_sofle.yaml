@@ -32,7 +32,7 @@ layers:
   - S
   - D
   - F
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - G
   - $$mdi:arrow-left-bold$$
   - H
   - J
@@ -63,7 +63,7 @@ layers:
   - {t: '1', h: toggle}
   - B
   - RIGHT GUI
-  - Alt+$$mdi:keyboard-space$$
+  - '&open_raycast'
   - {t: PgDn, h: PG UP}
   '1':
   - {t: '$$mdi:transfer$$', type: trans}
