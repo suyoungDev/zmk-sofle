@@ -62,7 +62,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '1', h: toggle}
   - B
-  - RIGHT GUI
+  - '&open_gpt'
   - '&open_raycast'
   - {t: PgDn, h: PG UP}
   '1':
