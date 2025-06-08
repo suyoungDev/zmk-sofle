@@ -32,7 +32,7 @@ layers:
   - S
   - D
   - F
-  - {t: G, s: Sft+Ctl+G}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-left-bold$$
   - H
   - J
@@ -69,8 +69,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F2
-  - {t: F12, s: Alt+Sft+F12}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F12
+  - '&ide_open_references'
   - '&voice_over'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -93,11 +93,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Ctl+`, s: Ctl+~}
+  - '&ide_open_terminal'
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
-  - {t: G, s: Sft+Ctl+G}
+  - '&ide_source_control'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
