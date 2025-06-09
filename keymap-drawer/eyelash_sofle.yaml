@@ -84,7 +84,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&ide_refactor'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&ide_open_terminal'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-up$$
