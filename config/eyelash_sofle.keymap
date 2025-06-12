@@ -160,6 +160,13 @@
             bindings = <&kp LA(LG(SPACE))>;
             label = "OPEN_GPT";
         };
+
+        ide_logging: ide_logging {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp O &kp N &kp S &kp O &kp L &kp E &kp DOT &kp L &kp O &kp G &kp LPAR &kp RPAR &kp LEFT_ARROW>;
+            label = "IDE_LOGGING";
+        };
     };
 
     keymap {
@@ -190,21 +197,11 @@
 
         layer_2 {
             bindings = <
-&mt TILDE GRAVE  &trans  &trans  &trans  &trans     &trans            &trans  &trans     &trans     &trans     &trans  &mt UNDER MINUS   &mt PLUS EQUAL
-&trans           &trans  &trans  &trans  &trans     &trans            &trans  &kp GRAVE  &kp TILDE  &trans     &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE
-&trans           &trans  &trans  &trans  &kp GRAVE  &kp UNDERSCORE    &trans  &kp MINUS  &kp PLUS   &kp EQUAL  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans           &trans  &trans  &trans  &trans     &trans            &trans  &kp EQUAL  &trans     &trans     &trans  &trans            &trans
-&trans           &trans  &trans  &trans  &trans     &trans            &trans  &trans     &trans     &trans     &trans  &trans
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&mt TILDE GRAVE  &trans  &trans  &trans  &trans     &trans            &trans  &trans     &trans     &trans     &trans        &mt UNDER MINUS   &mt PLUS EQUAL
+&trans           &trans  &trans  &trans  &trans     &trans            &trans  &kp GRAVE  &kp TILDE  &trans     &trans        &kp LEFT_BRACE    &kp RIGHT_BRACE
+&trans           &trans  &trans  &trans  &kp GRAVE  &kp UNDERSCORE    &trans  &kp MINUS  &kp PLUS   &kp EQUAL  &ide_logging  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans           &trans  &trans  &trans  &trans     &trans            &trans  &kp EQUAL  &trans     &trans     &trans        &trans            &trans
+&trans           &trans  &trans  &trans  &trans     &trans            &trans  &trans     &trans     &trans     &trans        &trans
             >;
         };
     };
