@@ -207,7 +207,7 @@
             display-name = "LAYER0";
         };
 
-        layer_1 {
+        NAV {
             bindings = <
 &trans          &trans              &kp F2     &kp F12         &ide_open_references  &voice_over            &mmv MOVE_UP     &trans          &trans          &trans        &trans           &trans  &trans
 &trans          &trans              &trans     &trans          &ide_refactor         &ide_open_terminal     &mmv MOVE_DOWN   &paste          &copy           &cut          &undo            &trans  &trans
