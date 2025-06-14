@@ -57,15 +57,15 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
-  - {t: '$$mdi:keyboard-space$$', h: '1'}
+  - {t: '$$mdi:keyboard-space$$', h: NAV}
   - {t: '$$mdi:keyboard-space$$', h: '2'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '1', h: toggle}
+  - {t: NAV, h: toggle}
   - B
   - {t: PgDn, h: PgUp}
   - '&open_gpt'
   - '&open_raycast'
-  '1':
+  NAV:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F2

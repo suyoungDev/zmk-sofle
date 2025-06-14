@@ -288,9 +288,8 @@ rect.held, rect.combo.held {
 <g transform="translate(84, 56)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#x_x">
-<text x="0" y="-4" class="key tap layer-activator">1</text>
-</a><text x="0" y="24" class="key hold">!</text>
+<text x="0" y="-4" class="key tap">1</text>
+<text x="0" y="24" class="key hold">!</text>
 </g>
 <g transform="translate(140, 35)" class="key keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -593,8 +592,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-space"/>
-<a href="#x_x">
-<text x="0" y="24" class="key hold layer-activator">1</text>
+<a href="#NAV">
+<text x="0" y="24" class="key hold layer-activator">NAV</text>
 </a></g>
 <g transform="translate(389, 294) rotate(30.0)" class="key keypos-57">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -611,8 +610,8 @@ rect.held, rect.combo.held {
 <g transform="translate(535, 294) rotate(-30.0)" class="key keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#x_x">
-<text x="0" y="-4" class="key tap layer-activator">1</text>
+<a href="#NAV">
+<text x="0" y="-4" class="key tap layer-activator">NAV</text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(610, 283) rotate(-30.0)" class="key keypos-60">
@@ -655,8 +654,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 388)" class="layer-1">
-<text x="0" y="28" class="label" id="x_x">1:</text>
+<g transform="translate(40, 388)" class="layer-NAV">
+<text x="0" y="28" class="label" id="NAV">NAV:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
