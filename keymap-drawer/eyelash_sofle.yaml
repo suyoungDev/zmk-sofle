@@ -167,7 +167,7 @@ layers:
   - {t: '-', s: _}
   - +
   - {t: '=', s: +}
-  - '&ide_logging'
+  - {t: '$$mdi:transfer$$', type: trans}
   - '{'
   - '}'
   - {t: '$$mdi:transfer$$', type: trans}
