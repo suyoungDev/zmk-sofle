@@ -162,11 +162,32 @@
             label = "OPEN_GPT";
         };
 
-        ide_logging: ide_logging {
+        paste: paste {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp C &kp O &kp N &kp S &kp O &kp L &kp E &kp DOT &kp L &kp O &kp G &kp LPAR &kp RPAR &kp LEFT_ARROW>;
-            label = "IDE_LOGGING";
+            bindings = <&kp LG(V)>;
+            label = "PASTE";
+        };
+
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(C)>;
+            label = "COPY";
+        };
+
+        cut: cut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(X)>;
+            label = "CUT";
+        };
+
+        undo: undo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(Z)>;
+            label = "UNDO";
         };
     };
 
@@ -188,11 +209,11 @@
 
         layer_1 {
             bindings = <
-&trans          &trans              &kp F2     &kp F12         &ide_open_references  &voice_over            &mmv MOVE_UP     &trans          &trans          &trans          &trans           &trans  &trans
-&trans          &trans              &trans     &trans          &ide_refactor         &ide_open_terminal     &mmv MOVE_DOWN   &trans          &msc SCRL_UP    &msc SCRL_DOWN  &trans           &trans  &trans
-&trans          &ide_open_terminal  &mkp LCLK  &mkp MCLK       &mkp RCLK             &ide_source_control    &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans  &trans
-&trans          &trans              &trans     &ide_kill_node  &kp LS(LEFT_ALT)      &kp LS(LEFT_GUI)       &mmv MOVE_RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans  &trans
-&bt BT_CLR_ALL  &trans              &trans     &trans          &trans                &trans                 &mkp LCLK        &trans          &trans          &trans          &trans           &trans
+&trans          &trans              &kp F2     &kp F12         &ide_open_references  &voice_over            &mmv MOVE_UP     &trans          &trans          &trans        &trans           &trans  &trans
+&trans          &trans              &trans     &trans          &ide_refactor         &ide_open_terminal     &mmv MOVE_DOWN   &paste          &copy           &cut          &undo            &trans  &trans
+&trans          &ide_open_terminal  &mkp LCLK  &mkp MCLK       &mkp RCLK             &ide_source_control    &mmv MOVE_LEFT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans          &trans              &trans     &ide_kill_node  &kp LS(LEFT_ALT)      &kp LS(LEFT_GUI)       &mmv MOVE_RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
+&bt BT_CLR_ALL  &trans              &trans     &trans          &trans                &trans                 &mkp LCLK        &trans          &trans          &trans        &trans           &trans
             >;
         };
 
@@ -203,6 +224,16 @@
 &trans  &trans  &trans  &trans                &kp GRAVE       &kp UNDERSCORE      &trans  &kp MINUS          &kp PLUS         &kp EQUAL              &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE
 &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET    &trans  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans  &trans  &trans  &trans                &trans          &trans              &trans  &trans             &trans           &trans                 &trans  &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
