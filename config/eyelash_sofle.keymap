@@ -216,14 +216,14 @@
         NAV {
             bindings = <
 &trans          &trans              &kp F2     &kp F12         &ide_open_references  &voice_over            &mmv MOVE_UP     &trans                         &trans                         &trans                     &trans                           &trans  &trans
-&trans          &trans              &trans     &trans          &ide_refactor         &ide_open_terminal     &mmv MOVE_DOWN   &undo                          &copy                          &cut                       &paste                           &trans  &trans
+&trans          &trans              &trans     &trans          &ide_refactor         &trans                 &mmv MOVE_DOWN   &undo                          &copy                          &cut                       &paste                           &trans  &trans
 &trans          &ide_open_terminal  &mkp LCLK  &mkp MCLK       &mkp RCLK             &ide_source_control    &mmv MOVE_LEFT   &mt LA(LEFT_ARROW) LEFT_ARROW  &mt LA(DOWN_ARROW) DOWN_ARROW  &mt LA(UP_ARROW) UP_ARROW  &mt LA(RIGHT_ARROW) RIGHT_ARROW  &trans  &trans
 &trans          &trans              &trans     &ide_kill_node  &kp LS(LEFT_ALT)      &kp LS(LEFT_GUI)       &mmv MOVE_RIGHT  &mmv MOVE_LEFT                 &mmv MOVE_DOWN                 &mmv MOVE_UP               &mmv MOVE_RIGHT                  &trans  &trans
 &bt BT_CLR_ALL  &trans              &trans     &trans          &trans                &trans                 &mkp LCLK        &trans                         &trans                         &trans                     &trans                           &trans
             >;
         };
 
-        layer_2 {
+        signs {
             bindings = <
 &trans  &trans  &trans  &trans                &trans          &trans              &trans  &trans             &trans           &trans                 &trans  &trans            &trans
 &trans  &trans  &trans  &trans                &trans          &trans              &trans  &kp GRAVE          &kp TILDE        &trans                 &trans  &trans            &trans
