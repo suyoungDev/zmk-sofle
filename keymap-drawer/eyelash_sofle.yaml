@@ -86,10 +86,10 @@ layers:
   - '&ide_refactor'
   - '&ide_open_terminal'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - '&paste'
+  - '&undo'
   - '&copy'
   - '&cut'
-  - '&undo'
+  - '&paste'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
