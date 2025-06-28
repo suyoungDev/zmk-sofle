@@ -226,7 +226,7 @@
 
         signs {
             bindings = <
-&trans  &trans  &trans  &trans                &trans          &trans              &trans  &trans             &trans           &trans                 &trans  &trans            &trans
+&trans  &trans  &trans  &trans                &trans          &trans              &trans  &trans             &trans           &trans                 &trans  &trans            &bt BT_CLR_ALL
 &trans  &trans  &trans  &trans                &trans          &trans              &trans  &kp GRAVE          &kp TILDE        &trans                 &trans  &trans            &trans
 &trans  &trans  &trans  &trans                &kp GRAVE       &kp UNDERSCORE      &trans  &kp MINUS          &kp PLUS         &kp EQUAL              &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE
 &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET    &trans  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
