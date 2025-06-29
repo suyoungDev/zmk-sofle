@@ -86,7 +86,7 @@ layers:
   - '&ide_refactor'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&redo'
   - '&paste'
   - '&copy'
   - '&cut'
