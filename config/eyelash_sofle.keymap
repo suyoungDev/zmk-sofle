@@ -196,6 +196,13 @@
             bindings = <&kp LG(Z)>;
             label = "UNDO";
         };
+
+        redo: redo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(Z))>;
+            label = "REDO";
+        };
     };
 
     keymap {
@@ -217,7 +224,7 @@
         ide {
             bindings = <
 &trans          &trans              &kp F2  &kp F12         &ide_open_references  &voice_over            &mmv MOVE_UP     &trans  &trans                         &trans             &trans                     &trans               &trans
-&trans          &trans              &trans  &trans          &ide_refactor         &trans                 &mmv MOVE_DOWN   &trans  &paste                         &copy              &cut                       &undo                &trans
+&trans          &trans              &trans  &trans          &ide_refactor         &trans                 &mmv MOVE_DOWN   &redo   &paste                         &copy              &cut                       &undo                &trans
 &trans          &ide_open_terminal  &trans  &trans          &trans                &ide_source_control    &mmv MOVE_LEFT   &trans  &mt LA(LEFT_ARROW) LEFT_ARROW  &mt LA(DOWN) DOWN  &mt LA(UP_ARROW) UP_ARROW  &mt LA(RIGHT) RIGHT  &trans
 &trans          &trans              &trans  &ide_kill_node  &trans                &trans                 &mmv MOVE_RIGHT  &trans  &mmv MOVE_LEFT                 &mmv MOVE_DOWN     &mmv MOVE_UP               &mmv MOVE_RIGHT      &trans
 &bt BT_CLR_ALL  &trans              &trans  &trans          &trans                &trans                 &mkp LCLK        &trans  &trans                         &trans             &trans                     &trans
