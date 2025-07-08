@@ -67,7 +67,7 @@ layers:
   - '&open_raycast'
   ide:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&screenshot'
   - F2
   - F12
   - '&ide_open_references'
