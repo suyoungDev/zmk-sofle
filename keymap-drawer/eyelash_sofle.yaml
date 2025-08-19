@@ -40,7 +40,7 @@ layers:
   - L
   - {t: ;, h: ':', s: ':'}
   - {t: '''', h: '"', s: '"'}
-  - '&td_shift'
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -270,3 +270,5 @@ combos:
 - p: [1, 0]
   k: {t: '`', s: '~'}
   l: [LAYER0]
+- p: [39, 40]
+  k: $$mdi:alpha-w-box$$
