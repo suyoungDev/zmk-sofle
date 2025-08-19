@@ -233,27 +233,29 @@
 &kp C_MUTE  &kp LCTRL           &kp LEFT_ALT           &kp LEFT_GUI        &lt 1 SPACE           &lt 2 SPACE        &kp ENTER        &lt 3 SPACE          &kp B              &mt PAGE_UP PAGE_DOWN  &open_gpt                 &open_raycast
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            sensor-bindings = <&scroll_encoder>;
             display-name = "LAYER0";
         };
 
         ide {
             bindings = <
-&trans          &screenshot         &kp F2     &kp F12         &ide_open_references  &voice_over            &mmv MOVE_UP     &trans  &trans                         &trans             &trans                     &trans               &trans
-&trans          &trans              &trans     &trans          &ide_refactor         &trans                 &mmv MOVE_DOWN   &redo   &paste                         &copy              &cut                       &undo                &trans
-&trans          &ide_open_terminal  &mkp LCLK  &mkp MCLK       &mkp RCLK             &ide_source_control    &mmv MOVE_LEFT   &trans  &mt LA(LEFT_ARROW) LEFT_ARROW  &mt LA(DOWN) DOWN  &mt LA(UP_ARROW) UP_ARROW  &mt LA(RIGHT) RIGHT  &trans
-&trans          &trans              &trans     &ide_kill_node  &trans                &trans                 &mmv MOVE_RIGHT  &trans  &mmv MOVE_LEFT                 &mmv MOVE_DOWN     &mmv MOVE_UP               &mmv MOVE_RIGHT      &trans
-&bt BT_CLR_ALL  &trans              &trans     &trans          &trans                &trans                 &mkp LCLK        &trans  &trans                         &trans             &trans                     &trans
+&trans      &screenshot         &kp F2     &kp F12         &ide_open_references  &voice_over            &mmv MOVE_UP     &trans  &trans                         &trans             &trans                     &trans               &trans
+&trans      &trans              &trans     &trans          &ide_refactor         &trans                 &mmv MOVE_DOWN   &redo   &paste                         &copy              &cut                       &undo                &trans
+&trans      &ide_open_terminal  &mkp LCLK  &mkp MCLK       &mkp RCLK             &ide_source_control    &mmv MOVE_LEFT   &trans  &mt LA(LEFT_ARROW) LEFT_ARROW  &mt LA(DOWN) DOWN  &mt LA(UP_ARROW) UP_ARROW  &mt LA(RIGHT) RIGHT  &trans
+&trans      &trans              &trans     &ide_kill_node  &trans                &trans                 &mmv MOVE_RIGHT  &trans  &mmv MOVE_LEFT                 &mmv MOVE_DOWN     &mmv MOVE_UP               &mmv MOVE_RIGHT      &trans
+&kp C_MUTE  &trans              &trans     &trans          &trans                &trans                 &mkp LCLK        &trans  &trans                         &trans             &trans                     &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         signs {
             bindings = <
-&trans  &trans  &trans  &trans                &trans          &trans              &trans  &trans             &trans           &trans                 &trans            &trans  &trans
-&trans  &trans  &trans  &trans                &trans          &trans              &trans  &kp GRAVE          &kp TILDE        &trans                 &trans            &trans  &trans
-&trans  &trans  &trans  &trans                &kp GRAVE       &kp UNDERSCORE      &trans  &kp MINUS          &kp PLUS         &kp EQUAL              &kp GREATER_THAN  &trans  &trans
-&trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET    &trans  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &trans            &trans  &trans
-&trans  &trans  &trans  &trans                &trans          &trans              &trans  &trans             &trans           &trans                 &trans            &trans
+&trans          &trans  &trans  &trans                &trans          &trans              &trans  &trans             &trans           &trans                 &trans            &trans  &trans
+&trans          &trans  &trans  &trans                &trans          &trans              &trans  &kp GRAVE          &kp TILDE        &trans                 &trans            &trans  &trans
+&trans          &trans  &trans  &trans                &kp GRAVE       &kp UNDERSCORE      &trans  &kp MINUS          &kp PLUS         &kp EQUAL              &kp GREATER_THAN  &trans  &trans
+&trans          &trans  &trans  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET    &trans  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &trans            &trans  &trans
+&bt BT_CLR_ALL  &trans  &trans  &trans                &trans          &trans              &trans  &trans             &trans           &trans                 &trans            &trans
             >;
         };
 
@@ -267,6 +269,7 @@
             >;
 
             label = "nav";
+            sensor-bindings = <&scroll_encoder>;
         };
     };
 };
