@@ -171,7 +171,7 @@
         ide_open_references: ide_open_references {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LG(F12))>;
+            bindings = <&kp LA(LS(F12))>;
             label = "IDE_OPEN_REFERENCES";
         };
 
