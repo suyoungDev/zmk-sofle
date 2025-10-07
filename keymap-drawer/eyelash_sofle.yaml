@@ -125,7 +125,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: 'Gui+$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:backspace$$', h: 'Alt+$$mdi:backspace$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
