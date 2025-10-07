@@ -272,11 +272,11 @@
 
         nav {
             bindings = <
-&studio_unlock  &trans            &trans        &trans            &trans          &trans    &mmv MOVE_UP     &trans  &trans                         &trans             &trans                     &trans               &studio_unlock
-&trans          &trans            &trans        &trans            &trans          &trans    &mmv MOVE_DOWN   &trans  &paste                         &copy              &cut                       &undo                &trans
-&trans          &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans    &mmv MOVE_LEFT   &trans  &mt LA(LEFT_ARROW) LEFT_ARROW  &mt LA(DOWN) DOWN  &mt LA(UP_ARROW) UP_ARROW  &mt LA(RIGHT) RIGHT  &trans
-&trans          &trans            &trans        &trans            &trans          &trans    &mmv MOVE_RIGHT  &trans  &mmv MOVE_LEFT                 &mmv MOVE_DOWN     &mmv MOVE_UP               &mmv MOVE_RIGHT      &trans
-&bt BT_CLR_ALL  &trans            &trans        &trans            &trans          &trans    &mkp LCLK        &trans  &trans                         &trans             &trans                     &trans
+&studio_unlock  &trans          &trans            &trans        &trans            &trans    &mmv MOVE_UP     &trans  &trans                         &trans             &trans                     &trans               &studio_unlock
+&trans          &trans          &trans            &trans        &trans            &trans    &mmv MOVE_DOWN   &trans  &paste                         &copy              &cut                       &undo                &trans
+&trans          &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &trans    &mmv MOVE_LEFT   &trans  &mt LA(LEFT_ARROW) LEFT_ARROW  &mt LA(DOWN) DOWN  &mt LA(UP_ARROW) UP_ARROW  &mt LA(RIGHT) RIGHT  &trans
+&trans          &trans          &trans            &trans        &trans            &trans    &mmv MOVE_RIGHT  &trans  &mmv MOVE_LEFT                 &mmv MOVE_DOWN     &mmv MOVE_UP               &mmv MOVE_RIGHT      &trans
+&bt BT_CLR_ALL  &trans          &trans            &trans        &trans            &trans    &mkp LCLK        &trans  &trans                         &trans             &trans                     &trans
             >;
 
             label = "nav";
