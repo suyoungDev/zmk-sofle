@@ -272,3 +272,5 @@ combos:
   l: [LAYER0]
 - p: [39, 40]
   k: $$mdi:alpha-w-box$$
+- p: [36, 37]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
