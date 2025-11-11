@@ -62,7 +62,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-space$$', h: nav}
   - B
-  - {t: PgDn, h: PgUp}
+  - {t: '$$mdi:backspace$$', h: 'AltGr+$$mdi:backspace$$'}
   - '&open_gpt'
   - '&open_raycast'
   ide:
