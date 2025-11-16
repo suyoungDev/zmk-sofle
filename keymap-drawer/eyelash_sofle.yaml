@@ -58,11 +58,11 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:keyboard-space$$', h: ide}
-  - {t: '$$mdi:keyboard-space$$', h: signs}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: signs}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-space$$', h: nav}
+  - {t: '$$mdi:backspace$$', h: 'Alt+$$mdi:backspace$$'}
   - B
-  - {t: '$$mdi:backspace$$', h: 'AltGr+$$mdi:backspace$$'}
+  - {t: nav, h: '$$mdi:gesture-tap-hold$$'}
   - '&open_gpt'
   - '&open_raycast'
   ide:
@@ -255,9 +255,9 @@ layers:
   - {type: held alternate}
   - {type: held alternate}
   - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
